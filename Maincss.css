@@ -1,0 +1,65 @@
+body{
+    font-family: Agency FB, Times, serif;
+    font-size: 14pt;
+}
+
+/* topic */
+h1{
+    background-color: rgb(30, 34, 78);
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: -60px 0px rgba(255, 255, 255, 0.148),60px 0px rgba(255, 255, 255, 0.148);
+}
+
+.main{
+    color: rgb(30, 30, 157);
+}
+
+/* sub topic */
+h3{
+    color: rgb(60, 0, 76),;
+    font-weight: bold;
+}
+
+/* div{
+    text-align: center;
+} */
+
+.bottom {
+    text-align: center;
+}
+
+ul{
+    margin: auto;
+    width: 400px;
+}
+
+
+/* pictuer ewe */
+#my_pic{
+    width: 40%;
+    border-radius: 10px;
+}
+
+/* tape */
+.hightlight{
+    background-color: rgba(120, 142, 255, 0.421);
+    display: block;
+}
+
+span{
+    background-color: rgba(244, 120, 255, 0.421);
+}
+
+/* a link */
+a{
+    color: blueviolet;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(0, 0, 0);
+}
+/* a:visited{
+    color: blue;
+} */
