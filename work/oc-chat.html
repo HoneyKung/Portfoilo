@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OC Chat — Nattanitcha Promboon</title>
+<meta name="description" content="OC Chat: a chat app where original characters text each other, and every message comes from what they are doing in their simulated lives.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../print.css" media="print">
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+  <a class="brand" href="../index.html">Nattanitcha Promboon</a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="../product.html">Product &amp; Prototyping</a>
+    <a href="../character.html">Character × Tech</a>
+    <a href="../about.html">About</a>
+  </nav>
+</div></header>
+
+<main><article class="wrap">
+  <header class="proj-head">
+  <div class="proj-text">
+    <p class="crumb"><a href="../character.html">← Character × Tech</a></p>
+
+    <h1>OC Chat</h1>
+    <p class="lede">A chat app where original characters (OCs) text each other — and every message comes from what they are doing in their simulated lives, not from thin air.</p>
+
+    <dl class="facts">
+      <div><dt>Year</dt><dd>2026</dd></div>
+      <div><dt>Team / role</dt><dd>Personal project — designer and director; AI writes the code</dd></div>
+      <div><dt>Tools</dt><dd>Gemini (one model call per character) · web app on my own server</dd></div>
+      <div><dt>Status</dt><dd><span class="status">in progress</span></dd></div>
+    </dl>
+  </div>
+  <figure class="hero dark">
+    <img src="../assets/oc-chat/characters.webp" alt="OC Chat room where two original characters chat with each other" width="1440" height="900" loading="eager">
+    <figcaption>A room where OCs chat with each other — the core of the app.</figcaption>
+  </figure>
+  </header>
+
+
+  <div class="story">
+    <h2>Problem</h2>
+    <p>I don’t just want to know what a character says. I want to know what they’re doing as they type, where they’ve just been, and why they haven’t read or replied yet. Ordinary AI chats read like generated fiction, and “multi-character” usually means one message with an extra role written in. I wanted chats that happen because something happened.</p>
+
+    <h2>What I decided</h2>
+    <ul class="decisions">
+      <li><strong>Code runs the life; AI only writes the words.</strong> A world clock, seasons, places and chained daily routines decide who is where, doing what. The model writes what the character says in that moment.</li>
+      <li><strong>A status is what a character does, not what it is.</strong> Emotion isn’t a status — it shows in the text.</li>
+      <li><strong>OCs talking to each other is the core.</strong> Chatting with them yourself is a smaller add-on, and there the character always replies: users pay per message and expect an answer. Choosing to stay quiet belongs to the OC-to-OC rooms, where it is natural.</li>
+      <li><strong>Real chat rhythm.</strong> I noticed strict 1:1 turn-taking didn’t read like people. Characters can send several bubbles, which appear one by one at typing speed.</li>
+      <li><strong>No examples in prompts.</strong> I noticed the model copied whatever examples it was given; a test confirmed it — 9 of 9 drafts copied the example’s closing line — so examples came out.</li>
+      <li><strong>Memory like a person’s.</strong> Memory can be edited or deleted — a character who “remembers” you haven’t eaten when you already have should be correctable. Characters can also call.</li>
+    </ul>
+
+    <h2>Result</h2>
+    <p>In progress. Working now: OC-to-OC rooms and user rooms, multi-bubble messages at typing speed, phone calls, editable memory.</p>
+    <p><strong>Planned</strong> (not built yet): a SaaS app where artists and OC owners create and direct their own characters — with no AI image generation; group rooms; chibi sprites that walk their routines on a map; and a local model to support many users when the API isn’t enough.</p>
+
+    <h2>Aljah — a character who helps on my shop page</h2>
+    <p>Aljah is my stand-in OC. Built on the same chat system, Aljah helps with Facebook Messenger replies on my Mofych page as a friend helping out, not as an admin or a bot. For each person I choose whether Aljah replies alone or drafts a reply for my review: customer and order messages I check myself; greetings and introductions Aljah can answer alone. Aljah has also posted to the page on its own. <strong>Still testing with friends</strong> — not yet answering real customers.</p>
+  </div>
+
+  <h2 class="label">Gallery</h2>
+  <div class="gallery">
+    <figure>
+      <img src="../assets/oc-chat/live.webp" alt="Mockup of a live call screen with a character, desktop" width="1340" height="1600" loading="lazy">
+      <figcaption>Mockup: live call with a character (desktop).</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/oc-chat/workspace.webp" alt="Workspace screen for managing characters" width="1440" height="900" loading="lazy">
+      <figcaption>Workspace for managing characters.</figcaption>
+    </figure>
+  </div>
+
+  <h2 class="label">My role vs AI</h2>
+  <div class="role-ai">
+    <p>Me: the world and life rules, spotting where chat felt unnatural and setting the problem, every keep/cut decision; I also tried competitor apps myself. AI: all the code, bug-hunting, testing and competitor research — run as a team with checks (<a href="../about.html">how I work with AI</a>).</p>
+  </div>
+
+  <nav class="pager" aria-label="Project navigation">
+    <a href="../character.html">← All Character × Tech work</a>
+    <a href="stardew-mod.html">Next: Stardew Valley mod →</a>
+  </nav>
+</article></main>
+
+<footer class="site-foot"><div class="wrap">
+  <a href="mailto:nattanitchafarm@gmail.com">nattanitchafarm@gmail.com</a> · <a href="../about.html">About</a>
+</div></footer>
+</body>
+</html>

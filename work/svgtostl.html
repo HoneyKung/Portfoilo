@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>svgtostl — Nattanitcha Promboon</title>
+<meta name="description" content="svgtostl: a tool that turns filled-black drawings into printable 3D parts with sharp corners and true curves.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../print.css" media="print">
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+  <a class="brand" href="../index.html">Nattanitcha Promboon</a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="../product.html">Product &amp; Prototyping</a>
+    <a href="../character.html">Character × Tech</a>
+    <a href="../about.html">About</a>
+  </nav>
+</div></header>
+
+<main><article class="wrap">
+  <header class="proj-head side">
+  <div class="proj-text">
+    <p class="crumb"><a href="../product.html">← Product &amp; Prototyping</a></p>
+
+    <h1>svgtostl</h1>
+    <p class="lede">A tool that turns my filled-black drawings into printable 3D parts with sharp corners and curves true to the drawing — so I can print exactly what I drew, for keychains and even fabric patterns.</p>
+
+    <dl class="facts">
+      <div><dt>Year</dt><dd>2026</dd></div>
+      <div><dt>Team / role</dt><dd>Solo · self-initiated</dd></div>
+      <div><dt>Tools</dt><dd>Image → vector → STL pipeline · 3D printer (0.2 mm nozzle)</dd></div>
+      <div><dt>Status</dt><dd><span class="status">in use</span> known limits logged</dd></div>
+    </dl>
+  </div>
+  <figure class="hero">
+    <img src="../assets/svgtostl/keychain-finished-hero.jpg" alt="Finished 3D-printed and painted character keychain with charms" width="2000" height="2000" loading="eager">
+    <figcaption>A finished keychain — drawn, printed and painted by me. It holds a bearing so the character can swing.</figcaption>
+  </figure>
+  </header>
+
+
+  <div class="story">
+    <h2>Problem</h2>
+    <p>I wanted small printed pieces that keep every detail of my drawing, without modelling each one by hand and without AI-generated models that lose detail.</p>
+
+    <h2>What I decided</h2>
+    <ul class="decisions">
+      <li><strong>The standard: true to the drawing.</strong> Sharp corners and curves that match what I drew. I judge quality by smooth curves, sharp tips and no wobble — not by file size.</li>
+      <li><strong>No point reduction.</strong> I cut the Douglas-Peucker simplify step: on a 90 mm ring it made straight segments 4–6 mm long that printed as visible facets at a 0.2 mm nozzle. If triangles must be reduced, resample along the curve length instead.</li>
+      <li><strong>Tune from real prints.</strong> Settings were chosen by measuring printed parts — a lower blur setting sharpened tips by about 0.17–0.23 mm.</li>
+      <li><strong>Split, then stack.</strong> Drawings are converted part by part and the pieces stack together; keychains are designed to hold a bearing so the character swings.</li>
+    </ul>
+
+    <h2>Result</h2>
+    <p>Used for my own keychains, for a 22-piece shop logo print, and for printing fabric patterns. Limits I logged myself: the STL is not yet watertight (the slicer repairs it), and large images use around 3 GB of RAM.</p>
+  </div>
+
+  <h2 class="label">Gallery</h2>
+  <div class="gallery">
+    <figure>
+      <img src="../assets/svgtostl/keychain-finished-on-base.jpg" alt="Finished keychain standing on its base" width="2000" height="2000" loading="lazy">
+      <figcaption>Finished keychain on its base.</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/svgtostl/keychain-process-painting.jpg" alt="Printed keychain layers being painted" width="1500" height="1500" loading="lazy">
+      <figcaption>Separate printed layers during painting.</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/svgtostl/silhouette-1.webp" alt="Filled-black drawing used as input, example 1" width="1600" height="1600" loading="lazy">
+      <figcaption>Input: filled-black drawing (1).</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/svgtostl/silhouette-2.webp" alt="Filled-black drawing used as input, example 2" width="1600" height="1600" loading="lazy">
+      <figcaption>Input: filled-black drawing (2).</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/svgtostl/silhouette-3.webp" alt="Filled-black drawing used as input, example 3" width="1600" height="1600" loading="lazy">
+      <figcaption>Input: filled-black drawing (3).</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/svgtostl/silhouette-4.webp" alt="Filled-black drawing used as input, example 4" width="1500" height="1500" loading="lazy">
+      <figcaption>Input: filled-black drawing (4).</figcaption>
+    </figure>
+  </div>
+
+  <h2 class="label">My role vs AI</h2>
+  <div class="role-ai">
+    <p>Me: the method, the quality standard and every keep/cut decision; drawing, printing and painting the keychains. AI: wrote the tool’s code to my spec.</p>
+  </div>
+
+  <nav class="pager" aria-label="Project navigation">
+    <a href="../product.html">← All Product &amp; Prototyping work</a>
+    <a href="dolls.html">Next: Cotton Dolls →</a>
+  </nav>
+</article></main>
+
+<footer class="site-foot"><div class="wrap">
+  <a href="mailto:nattanitchafarm@gmail.com">nattanitchafarm@gmail.com</a> · <a href="../about.html">About</a>
+</div></footer>
+</body>
+</html>

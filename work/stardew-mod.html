@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stardew Valley mod — Nattanitcha Promboon</title>
+<meta name="description" content="Stardew Valley mod: an NPC who feels alive — his own daily routine, follow and lead modes, and dialogue that fits the situation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../print.css" media="print">
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+  <a class="brand" href="../index.html">Nattanitcha Promboon</a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="../product.html">Product &amp; Prototyping</a>
+    <a href="../character.html">Character × Tech</a>
+    <a href="../about.html">About</a>
+  </nav>
+</div></header>
+
+<main><article class="wrap">
+  <header class="proj-head">
+  <div class="proj-text">
+    <p class="crumb"><a href="../character.html">← Character × Tech</a></p>
+
+    <h1>Stardew Valley mod</h1>
+    <p class="lede">An NPC who feels alive: Raphael keeps his own daily routine, can follow you or lead you somewhere, and talks to fit the situation.</p>
+
+    <dl class="facts">
+      <div><dt>Year</dt><dd>Year 4, Term 1</dd></div>
+      <div><dt>Team / role</dt><dd>Designer and director (character, house and yard layout, behaviour rules, final say on script); an AI team writes the code and script</dd></div>
+      <div><dt>Tools</dt><dd>Stardew Valley 1.6 · SMAPI · C# · Content Patcher · pixel art</dd></div>
+      <div><dt>Status</dt><dd><span class="status">in progress</span></dd></div>
+    </dl>
+  </div>
+  <figure class="hero sprites-hero">
+    <div class="sprites">
+      <img class="pixel" src="../assets/stardew-mod/raphael-sprite-front.png" alt="Raphael's in-game walking sprite, drawn by me — front" width="160" height="320" loading="eager">
+      <img class="pixel" src="../assets/stardew-mod/raphael-sprite-right.png" alt="Raphael's walking sprite — facing right" width="160" height="320" loading="eager">
+      <img class="pixel" src="../assets/stardew-mod/raphael-sprite-back.png" alt="Raphael's walking sprite — back" width="160" height="320" loading="eager">
+      <img class="pixel" src="../assets/stardew-mod/raphael-sprite-left.png" alt="Raphael's walking sprite — facing left" width="160" height="320" loading="eager">
+    </div>
+    <figcaption>Raphael’s in-game walking sprite, drawn by me — front, right, back and left (shown enlarged).</figcaption>
+  </figure>
+  </header>
+
+
+  <div class="story">
+    <h2>Problem</h2>
+    <p>Make one NPC feel truly alive — not a character who stands in place reading lines, but one who has his own day, can do things with the player on request, and speaks to fit the moment. And build it so the same systems can be reused for other characters later.</p>
+
+    <h2>What I decided</h2>
+    <ul class="decisions">
+      <li><strong>Two layers.</strong> Eternity Core, a reusable C# framework that holds the behaviour systems, plus Content Patcher packs that hold the character’s data — so another character can be added without rewriting the engine.</li>
+      <li><strong>The character is mine.</strong> I designed Raphael and his whole personality, and chose the designs and visuals.</li>
+      <li><strong>His home, planned first.</strong> I designed the layout of Raphael’s house and front yard myself. This is still at the design stage — it is not in the game yet.</li>
+      <li><strong>Clear behaviour rules.</strong> The NPC does one thing at a time; a new command replaces the old one.</li>
+      <li><strong>Final say on the script.</strong> The AI team drafts dialogue; I decide which lines stay and which are cut.</li>
+    </ul>
+
+    <h2>Result</h2>
+    <p>Working in the game now:</p>
+    <ul>
+      <li>a daily routine across maps — Raphael walks his own schedule through town;</li>
+      <li>routines that read the game state (his museum stops follow what the player has donated);</li>
+      <li>a custom talk-topic menu to start activities with him;</li>
+      <li>lead mode — he guides the player to a destination with lines that fit the moment;</li>
+      <li>follow mode (still being tuned);</li>
+      <li>custom items (Eternity Goods);</li>
+      <li>extra Thai dialogue for townsfolk, depending on weather, time and place;</li>
+      <li>an in-game automated test suite with 200+ cases.</li>
+    </ul>
+    <p>Still in progress.</p>
+  </div>
+
+  <h2 class="label">In the game</h2>
+  <div class="gallery grid">
+    <!-- stardew-shots: in-game screenshots from the owner go here (routine, museum, talk menu, follow, lead, items, Thai dialogue, test summary) -->
+    <figure>
+      <img src="../assets/stardew-mod/stardew-routine-bridge-0950.webp" alt="Raphael walking his daily routine by the bridge at 9:50 AM" width="1276" height="718" loading="lazy">
+      <figcaption>Daily routine (9:50) — Raphael by the bridge on his own schedule, which the routine engine runs across maps.</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/stardew-mod/stardew-follow-1350.webp" alt="Raphael following the player through town at 1:50 PM" width="1276" height="720" loading="lazy">
+      <figcaption>Follow mode in town (13:50) — he follows the player in real time with pathfinding. Still being tuned.</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/stardew-mod/stardew-lead-arrive-1410.webp" alt="Raphael arriving at a destination after leading the player, 2:10 PM" width="1272" height="713" loading="lazy">
+      <figcaption>Lead mode (14:10) — Raphael leads the player and arrives at the destination.</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/stardew-mod/stardew-talk-menu-museum.webp" alt="Custom talk-topic menu with Raphael in the museum" width="1276" height="588" loading="lazy">
+      <figcaption>The custom talk-topic menu, in the museum.</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/stardew-mod/stardew-dialogue-pierre-rain.webp" alt="Pierre speaking an added Thai line on a rainy day" width="1272" height="721" loading="lazy">
+      <figcaption>Expanded Thai dialogue for townsfolk on a rainy day. Our team wrote the dialogue only — the Pierre portrait is from another mod, “Seasonal Cute Characters” by Poltergeister.</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/stardew-mod/stardew-house-key.webp" alt="Inventory tooltip for Raphael's house key, a custom special item" width="1258" height="722" loading="lazy">
+      <figcaption>A custom special item unlocked through a 4-heart friendship scene.</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/stardew-mod/stardew-item-orange-coffee.webp" alt="Inventory tooltip for a custom orange coffee item" width="1292" height="707" loading="lazy">
+      <figcaption>Custom food item from the team’s Eternity Goods pack — orange coffee.</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/stardew-mod/stardew-item-orange-cake.webp" alt="Inventory tooltip for a custom orange cake item" width="1277" height="713" loading="lazy">
+      <figcaption>Custom food item from Eternity Goods — orange cake.</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/stardew-mod/stardew-item-macaron.webp" alt="Inventory tooltip for a custom macaron item" width="1267" height="718" loading="lazy">
+      <figcaption>Custom food item from Eternity Goods — macaron.</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/stardew-mod/stardew-selftest-console.webp" alt="SMAPI console showing the in-game self-test summary" width="947" height="615" loading="lazy">
+      <figcaption>In-game automated test run: pass 192 / fail 6 / skip 26 — used to catch bugs before each release.</figcaption>
+    </figure>
+  </div>
+
+  <h2 class="label">Design stage (before building)</h2>
+  <p>Planning done before the map and schedule are built. These are design tools, not in-game screenshots.</p>
+  <div class="gallery two">
+    <figure>
+      <img src="../assets/stardew-mod/stardew-house-layout-tool.webp" alt="Interior layout tool showing Raphael’s house planned room by room" width="1600" height="1100" loading="lazy">
+      <figcaption>Interior layout tool — Raphael’s house planned room by room before building the map.</figcaption>
+    </figure>
+    <!-- stardew-design-B: front-yard planner — "Front-yard planner used to place paths, plants and props around the house." -->
+    <!-- stardew-design-C: routine map — "Routine map — where Raphael goes and when, planned before coding his schedule." -->
+  </div>
+
+  <h2 class="label">My role vs AI</h2>
+  <div class="role-ai">
+    <p>Me: Raphael’s design and personality, the layout of his house and front yard, the NPC behaviour rules, choosing designs and visuals, and deciding which script lines stay or go. AI team: code and script drafts.</p>
+  </div>
+
+  <nav class="pager" aria-label="Project navigation">
+    <a href="../character.html">← All Character × Tech work</a>
+    <a href="twom-mod.html">Next: This War of Mine mod →</a>
+  </nav>
+</article></main>
+
+<footer class="site-foot"><div class="wrap">
+  <a href="mailto:nattanitchafarm@gmail.com">nattanitchafarm@gmail.com</a> · <a href="../about.html">About</a>
+</div></footer>
+</body>
+</html>

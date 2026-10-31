@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minecraft Pixel Lamp — Nattanitcha Promboon</title>
+<meta name="description" content="Minecraft Pixel Lamp: a 3D-printed pixel lamp with ESP32 and addressable LEDs, controlled from a phone.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../print.css" media="print">
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+  <a class="brand" href="../index.html">Nattanitcha Promboon</a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="../product.html">Product &amp; Prototyping</a>
+    <a href="../character.html">Character × Tech</a>
+    <a href="../about.html">About</a>
+  </nav>
+</div></header>
+
+<main><article class="wrap">
+  <header class="proj-head side">
+  <div class="proj-text">
+    <p class="crumb"><a href="../product.html">← Product &amp; Prototyping</a></p>
+
+    <h1>Minecraft Pixel Lamp</h1>
+    <p class="lede">A 3D-printed pixel lamp whose light casts blocky, Minecraft-style shadows — controlled from a phone and powered by an ordinary phone adapter.</p>
+
+    <dl class="facts">
+      <div><dt>Year</dt><dd>Year 3, Term 2</dd></div>
+      <div><dt>Team / role</dt><dd>Solo · self-initiated</dd></div>
+      <div><dt>Tools</dt><dd>Tinkercad · 3D printing · ESP32 · WS2812B LEDs · Blynk app</dd></div>
+      <div><dt>Status</dt><dd><span class="status">done</span></dd></div>
+    </dl>
+  </div>
+  <figure class="hero">
+    <img src="../assets/minecraft-lamp/lamp-real-lit-hero.jpg" alt="The pixel lamp switched on, casting pixel-shaped shadows" width="2000" height="2000" loading="eager">
+    <figcaption>The lamp switched on — the light casts pixel shadows like Minecraft.</figcaption>
+  </figure>
+  </header>
+
+
+  <div class="story">
+    <h2>Problem</h2>
+    <p>I wanted a lamp that looks like it came out of Minecraft, that I can control from my phone, and that doesn’t need extra hardware to run.</p>
+
+    <h2>What I decided</h2>
+    <ul class="decisions">
+      <li><strong>Design and print it myself.</strong> Shape modelled in Tinkercad and printed on my own printer.</li>
+      <li><strong>Handle power in code, not hardware.</strong> Power is handled in code instead of adding hardware, so the lamp runs from a phone charger adapter.</li>
+      <li><strong>A flame that behaves like a flame.</strong> I specified the flame effect to step white → orange → red, never skipping a step.</li>
+    </ul>
+
+    <h2>Result</h2>
+    <p>A working lamp: 50 WS2812B LEDs on an ESP32. Colour, brightness and effects are set from the Blynk app, which can also pull the weather for a city.</p>
+  </div>
+
+  <h2 class="label">Gallery</h2>
+  <div class="gallery">
+    <figure>
+      <img src="../assets/minecraft-lamp/lamp-cad-tinkercad.png" alt="Lamp design modelled in Tinkercad" width="1612" height="872" loading="lazy">
+      <figcaption>Lamp design in Tinkercad.</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/minecraft-lamp/lamp-real-lit-angle.jpg" alt="The pixel lamp switched on, seen from another angle" width="2000" height="2000" loading="lazy">
+      <figcaption>Switched on, another angle.</figcaption>
+    </figure>
+  </div>
+
+  <h2 class="label">My role vs AI</h2>
+  <div class="role-ai">
+    <p>Me: design, printing, assembly, and how the light must behave. AI: code, written to my spec.</p>
+  </div>
+
+  <nav class="pager" aria-label="Project navigation">
+    <a href="../product.html">← All Product &amp; Prototyping work</a>
+    <a href="svgtostl.html">Next: svgtostl →</a>
+  </nav>
+</article></main>
+
+<footer class="site-foot"><div class="wrap">
+  <a href="mailto:nattanitchafarm@gmail.com">nattanitchafarm@gmail.com</a> · <a href="../about.html">About</a>
+</div></footer>
+</body>
+</html>

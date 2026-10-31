@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Digital Puzzle Box — Nattanitcha Promboon</title>
+<meta name="description" content="Digital Puzzle Box: a physical board that controls a digital puzzle box, with six puzzles and a real hidden key.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../print.css" media="print">
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+  <a class="brand" href="../index.html">Nattanitcha Promboon</a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="../product.html">Product &amp; Prototyping</a>
+    <a href="../character.html">Character × Tech</a>
+    <a href="../about.html">About</a>
+  </nav>
+</div></header>
+
+<main><article class="wrap">
+  <header class="proj-head side">
+  <div class="proj-text">
+    <p class="crumb"><a href="../product.html">← Product &amp; Prototyping</a></p>
+
+    <h1>Digital Puzzle Box</h1>
+    <p class="lede">A physical board that works as the controller for a puzzle box living on screen — pick a face, solve its puzzle digitally, and find the real key to finish.</p>
+
+    <dl class="facts">
+      <div><dt>Year</dt><dd>Year 2, Term 2</dd></div>
+      <div><dt>Team / role</dt><dd>Team lead</dd></div>
+      <div><dt>Tools</dt><dd>Arduino · Processing · breadboard · servo · potentiometer · LEDs</dd></div>
+      <div><dt>Status</dt><dd><span class="status">done</span></dd></div>
+    </dl>
+  </div>
+  <figure class="hero">
+    <img src="../assets/digital-puzzle-box/puzzle-box-board.webp" alt="Overview of the Digital Puzzle Box board with buttons, LEDs and wiring" width="960" height="540" loading="eager">
+    <figcaption>The board that replaced the flip-able box.</figcaption>
+  </figure>
+  </header>
+
+
+  <div class="story">
+    <h2>Problem</h2>
+    <p>A normal puzzle box is solved physically, in your hands. I wanted a digital twin: you hold the real object like a console, and the puzzles live on screen — puzzles that only work digitally — so touching the real thing changes the digital world.</p>
+
+    <h2>What I decided</h2>
+    <ul class="decisions">
+      <li><strong>The real box is the controller.</strong> Turn to a face of the box, and the digital box on screen turns to the same face.</li>
+      <li><strong>Change the plan when the sensor fails.</strong> The gyro (MPU) didn’t work at all, so I switched from a box you flip to a flat board where you choose which face to play.</li>
+      <li><strong>Six puzzles, one per face</strong> — Color Match, Simon Says, Maze, Distance Puzzle, Keyhole and Clock Time.</li>
+      <li><strong>The last key is real.</strong> The Keyhole screen only hints where the key is hidden on the physical board; you find it and plug it in. Clear everything and the treasure box beside the board opens, with candy inside.</li>
+    </ul>
+
+    <h2>Result</h2>
+    <p>Built on a breadboard with one combined win condition across all six games.</p>
+  </div>
+
+  <h2 class="label">Gallery</h2>
+  <div class="gallery">
+    <figure>
+      <img src="../assets/digital-puzzle-box/controls-leds.webp" alt="Buttons, potentiometer and LEDs on the board" width="960" height="540" loading="lazy">
+      <figcaption>Buttons, potentiometer and LEDs.</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/digital-puzzle-box/servo-leds.webp" alt="Servo and LEDs on the board" width="960" height="540" loading="lazy">
+      <figcaption>Servo and LEDs.</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/digital-puzzle-box/memory-game.webp" alt="Screen of the light-sequence memory game" width="960" height="944" loading="lazy">
+      <figcaption>Light-sequence memory game.</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/digital-puzzle-box/maze-game.webp" alt="Maze game screen next to the Arduino IDE" width="960" height="510" loading="lazy">
+      <figcaption>Maze screen (built by me), with the Arduino IDE.</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/digital-puzzle-box/clock-game.webp" alt="Clock-time game screen next to the Arduino IDE" width="960" height="510" loading="lazy">
+      <figcaption>Clock-time game, with the Arduino IDE.</figcaption>
+    </figure>
+  </div>
+
+  <h2 class="label">My role vs AI</h2>
+  <div class="role-ai">
+    <p>Me: concept and device design, breadboard circuit, UI, logic and problem-solving; the maze screen, the system that joins the screens, and the Arduino code — mixing code I wrote myself with AI-written code. Teammates: the other Processing screens, documents and presentation.</p>
+  </div>
+
+  <nav class="pager" aria-label="Project navigation">
+    <a href="../product.html">← All Product &amp; Prototyping work</a>
+    <a href="oc-companion.html">Next: OC Companion “Moji” →</a>
+  </nav>
+</article></main>
+
+<footer class="site-foot"><div class="wrap">
+  <a href="mailto:nattanitchafarm@gmail.com">nattanitchafarm@gmail.com</a> · <a href="../about.html">About</a>
+</div></footer>
+</body>
+</html>

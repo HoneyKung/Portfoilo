@@ -1,0 +1,73 @@
+/* Print / Save as PDF — A4 landscape. Linked with media="print". */
+
+@page { size: A4 landscape; margin: 10mm 12mm; }
+
+html, body { background: #fff !important; }
+body { font-size: 9.5pt; line-height: 1.42; color: #000; }
+* { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+/* no floating / navigation chrome on paper */
+.site-head { position: static !important; backdrop-filter: none; background: #fff; border: 0; }
+.site-head .wrap { min-height: 0; padding: 0 0 3mm; }
+.site-nav, .pager, .site-foot, .crumb, .actions .ghost { display: none !important; }
+main { padding: 0; }
+.wrap { max-width: none; padding: 0; }
+
+a { color: #000; text-decoration: none; }
+a.ext::after { content: " (" attr(href) ")"; font-size: 8pt; color: #444; }
+.card .cover img { transform: none !important; transition: none; }
+
+h1 { font-size: 22pt; margin-bottom: 2mm; }
+h2 { font-size: 12pt; margin: 5mm 0 2mm; break-after: avoid; }
+h3 { font-size: 10pt; }
+.lede { font-size: 11pt; max-width: none; margin-bottom: 3mm; }
+.label, .group-title { margin: 5mm 0 3mm; font-size: 8pt; break-after: avoid; }
+
+/* home */
+.intro { grid-template-columns: 1.4fr 1fr; gap: 4mm 10mm; padding: 0; }
+.intro h1 { font-size: 30pt; }
+.intro .id { font-size: 12pt; }
+.btn { padding: 1.5mm 4mm; font-size: 9pt; }
+.track-head { margin: 6mm 0 1mm; padding-top: 2mm; break-after: avoid; }
+.track-head h2 { font-size: 15pt; }
+.track-head a { display: none; }
+.track-sub { margin-bottom: 3mm; }
+.mosaic { grid-template-columns: repeat(6, 1fr); gap: 4mm; }
+.mosaic > .card { grid-column: span 2; }
+.mosaic > .card.big { grid-column: span 2; grid-row: auto; }
+.mosaic > .card.big .cover { min-height: 0; flex: none; aspect-ratio: 4 / 3; }
+.mosaic > .card.big h3 { font-size: 10pt; }
+.mosaic > .card.big p { font-size: 8.5pt; }
+.intro .intro-side { font-size: 9pt; }
+.strip { margin-top: 6mm; padding-top: 3mm; gap: 4mm 8mm; grid-template-columns: repeat(4, 1fr); }
+.strip p { font-size: 9pt; }
+
+/* cards */
+.cards, .cards.lg { grid-template-columns: repeat(4, 1fr); gap: 5mm 4mm; }
+.cards.lg > .card, .cards.lg > .card:nth-last-child(n) { grid-column: span 1; }
+.cards.lg > .card .cover { aspect-ratio: 4 / 3 !important; }
+.card p { font-size: 8.5pt; }
+.card .meta { font-size: 8pt; }
+.card .body { padding-top: 2mm; }
+figure, .card, .role-ai, .strip > div { break-inside: avoid; }
+
+/* work page: text beside hero, story in two columns */
+.proj-head, .proj-head.side { grid-template-columns: 5fr 7fr; gap: 6mm 10mm; align-items: start; break-inside: avoid; }
+.proj-head:not(:has(.hero)) { grid-template-columns: 1fr; }
+.proj-head .facts { grid-template-columns: 1fr 1fr; padding-top: 2mm; gap: 2mm 6mm; }
+.facts dd { font-size: 9pt; }
+.hero img, .hero video { max-height: 105mm; }
+.hero.sprites-hero .sprites { aspect-ratio: auto; height: 70mm; }
+.story { display: block; columns: 2; column-gap: 10mm; margin-top: 6mm; max-width: none; }
+.story > h2 { border-top-width: 1.5pt; padding-top: 1.5mm; margin: 4mm 0 1.5mm; break-after: avoid; }
+.story > h2:first-child { margin-top: 0; }
+.story > h2 + * { border-top: 0; padding-top: 0; margin-top: 0 !important; }
+.story li { margin-bottom: 1.5mm; break-inside: avoid; }
+.gallery, .gallery.two { columns: 4; column-gap: 4mm; }
+.gallery.grid { grid-template-columns: repeat(4, 1fr); gap: 0 4mm; }
+.gallery > figure { margin-bottom: 4mm; }
+figcaption { font-size: 7.5pt; margin-top: 1mm; }
+.role-ai { max-width: none; border-left-width: 2pt; padding: 2.5mm 4mm; font-size: 9pt; }
+
+/* about */
+.about-grid { grid-template-columns: 1fr 1fr; gap: 0 10mm; }

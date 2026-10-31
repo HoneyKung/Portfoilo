@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MOFYCH Commission Website — Nattanitcha Promboon</title>
+<meta name="description" content="MOFYCH commission website: an art + web front end designed in Figma, a queue system and a paint colour matcher.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../print.css" media="print">
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+  <a class="brand" href="../index.html">Nattanitcha Promboon</a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="../product.html">Product &amp; Prototyping</a>
+    <a href="../character.html">Character × Tech</a>
+    <a href="../about.html">About</a>
+  </nav>
+</div></header>
+
+<main><article class="wrap">
+  <header class="proj-head">
+  <div class="proj-text">
+    <p class="crumb"><a href="../product.html">← Product &amp; Prototyping</a> · <a href="../character.html">Character × Tech</a></p>
+
+    <h1>MOFYCH Commission Website</h1>
+    <p class="lede">The website for my own commission shop: an “art + web” front end I designed, a queue people can follow, and a paint matcher that finds exact colours.</p>
+
+    <dl class="facts">
+      <div><dt>Year</dt><dd>2026</dd></div>
+      <div><dt>Team / role</dt><dd>Solo — design and system decisions; code built with AI</dd></div>
+      <div><dt>Tools</dt><dd>Figma · drawing app · Google Apps Script · Google Sheets · email</dd></div>
+      <div><dt>Status</dt><dd><span class="status">done</span> live at <a class="ext" href="https://honeykung.github.io/commission-tag/">honeykung.github.io/commission-tag</a></dd></div>
+    </dl>
+  </div>
+  <figure class="hero">
+    <img src="../assets/mofych-commission/home.webp" alt="Home page of the MOFYCH commission website with hand-drawn clouds and logo" width="1440" height="900" loading="eager">
+    <figcaption>Home page, designed in Figma.</figcaption>
+  </figure>
+  </header>
+
+
+  <div class="story">
+    <h2>Problem</h2>
+    <p>People who want a commission need to know when I open, where they are in the queue, and what fabrics and prices are available. For painted pieces I want colours to be exact, not just close — and paints on the market come from many brands with many near-identical shades.</p>
+
+    <h2>What I decided</h2>
+    <ul class="decisions">
+      <li><strong>Art + web.</strong> I designed the whole site myself in Figma: the clouds and logo are hand-drawn, and I designed the animation myself rather than letting AI choose it.</li>
+      <li><strong>A queue people can trust.</strong> Queue on Google Apps Script with Google Sheets and email alerts to people who tag the shop; cancelling has to be confirmed by email.</li>
+      <li><strong>One search across every brand</strong> — otherwise you don’t get the closest colour.</li>
+      <li><strong>Data I checked myself.</strong> I transcribed brand colour charts myself and asked for a plain text file so I can correct paint data on my own.</li>
+      <li><strong>A clear target.</strong> ΔE &lt; 5 as the goal; results are graded match / very close / close.</li>
+      <li><strong>Mix only ordinary paints.</strong> I removed fluorescent and metallic paints from the 2-paint mix recipes and kept normal base colours.</li>
+    </ul>
+
+    <h2>Result</h2>
+    <p>Live and in use: tag to follow openings, sample work, fabric colours, paint colours, email alerts, a queue sheet, and price and cost estimates. The paint matcher covers 1,131 paints (Vallejo, Army Painter, Citadel and Thai brand Thaitone); mix recipes come in 10% steps you can measure, marked as a guide to test with real paint. The colour maths uses standard formulas (CIEDE2000) written by AI.</p>
+  </div>
+
+  <h2 class="label">Gallery</h2>
+  <div class="gallery">
+    <figure>
+      <img src="../assets/mofych-commission/menu.webp" alt="Home page menu opened by pulling a string" width="1440" height="900" loading="lazy">
+      <figcaption>Pull the string to open the menu.</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/mofych-commission/estimate.webp" alt="Price estimate page of the commission website" width="801" height="1600" loading="lazy">
+      <figcaption>Price estimate.</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/mofych-commission/fabrics.webp" alt="Fabric colour options page" width="1440" height="1567" loading="lazy">
+      <figcaption>Fabric colours.</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/mofych-commission/queue.webp" alt="Public queue status page with sample data" width="1440" height="974" loading="lazy">
+      <figcaption>Public queue (mock data).</figcaption>
+    </figure>
+  </div>
+
+  <!-- sketches -->
+  <section class="sketches">
+    <h2 class="label">Sketches &amp; process</h2>
+    <div class="gallery">
+      <figure>
+        <img src="../assets/mofych-commission/mofych-web-sketch.webp" alt="Hand sketch of the MOFYCH web page layout with logo, buttons and form" width="1600" height="900" loading="lazy">
+        <figcaption>First sketch of the MOFYCH web page — logo, buttons, form.</figcaption>
+      </figure>
+      <figure>
+        <img src="../assets/mofych-commission/mofych-card-black-front.webp" alt="Front of the black MOFYCH collector card" width="1110" height="638" loading="lazy">
+        <figcaption>MOFYCH collector card, front (black).</figcaption>
+      </figure>
+      <figure>
+        <img src="../assets/mofych-commission/mofych-certificate.webp" alt="Doll Certificate of Creation card" width="1110" height="638" loading="lazy">
+        <figcaption>Doll “Certificate of Creation”.</figcaption>
+      </figure>
+      <figure>
+        <img src="../assets/mofych-commission/mofych-card-normal-1.webp" alt="Standard MOFYCH card, design 1" width="1110" height="638" loading="lazy">
+        <figcaption>Standard card, design 1.</figcaption>
+      </figure>
+      <figure>
+        <img src="../assets/mofych-commission/mofych-card-normal-5.webp" alt="Standard MOFYCH card, design 5 in light blue" width="1110" height="638" loading="lazy">
+        <figcaption>Standard card, design 5 (light blue).</figcaption>
+      </figure>
+      <figure>
+        <img src="../assets/mofych-commission/mofych-card-normal-bf.webp" alt="Standard MOFYCH card with a star pattern" width="1110" height="638" loading="lazy">
+        <figcaption>Standard card (star pattern).</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <h2 class="label">My role vs AI</h2>
+  <div class="role-ai">
+    <p>Me: the whole design — illustration, UI and motion — plus what the queue and paint matcher must do and the standards they must meet. AI: all code, built from my design, including the standard colour-difference and mixing formulas.</p>
+  </div>
+
+  <nav class="pager" aria-label="Project navigation">
+    <a href="../product.html">← All Product &amp; Prototyping work</a>
+    <a href="commission-booking-web.html">Next: Commission Booking Web →</a>
+  </nav>
+</article></main>
+
+<footer class="site-foot"><div class="wrap">
+  <a href="mailto:nattanitchafarm@gmail.com">nattanitchafarm@gmail.com</a> · <a href="../about.html">About</a>
+</div></footer>
+</body>
+</html>

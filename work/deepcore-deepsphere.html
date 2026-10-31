@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DeepCore → DeepSphere — Nattanitcha Promboon</title>
+<meta name="description" content="DeepCore and DeepSphere: a hands-on deep-sea explorer built on real species data. DeepCore won 1st Place at KMUTT Deep Sea Jam Hackathon 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../print.css" media="print">
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+  <a class="brand" href="../index.html">Nattanitcha Promboon</a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="../product.html">Product &amp; Prototyping</a>
+    <a href="../character.html">Character × Tech</a>
+    <a href="../about.html">About</a>
+  </nav>
+</div></header>
+
+<main><article class="wrap">
+  <header class="proj-head side">
+  <div class="proj-text">
+    <p class="crumb"><a href="../product.html">← Product &amp; Prototyping</a></p>
+
+    <h1>DeepCore → DeepSphere</h1>
+    <p class="lede">A hands-on deep-sea explorer you turn and dial, where every animal is a real species. DeepCore won 1st place at a hackathon; DeepSphere is the version I’m building now.</p>
+
+    <dl class="facts">
+      <div><dt>Year</dt><dd>2026 – present</dd></div>
+      <div><dt>Team / role</dt><dd>Team lead</dd></div>
+      <div><dt>Tools</dt><dd>ESP32 · OLED · joystick · slip ring + angle sensor · 3D printing · web 3D / digital twin</dd></div>
+      <div><dt>Status</dt><dd><span class="status">done</span> DeepCore — 1st Place<br><span class="status">in progress</span> DeepSphere</dd></div>
+    </dl>
+  </div>
+  <figure class="hero">
+    <img src="../assets/deepcore-deepsphere/device-setup.webp" alt="DeepCore set up on a desk: ESP32 on a breadboard, buttons, OLED, joystick, a clear ball on a rotating base and a laptop showing a 3D web scene" width="1600" height="1600" loading="eager">
+    <figcaption>DeepCore as built from real parts: ESP32 on a breadboard, three coloured buttons, OLED, joystick, a clear ball with a jellyfish on a rotating base, and the live 3D web scene on a laptop.</figcaption>
+  </figure>
+  </header>
+
+
+  <div class="story">
+    <h2>Problem</h2>
+    <p>The hackathon theme was the deep sea. The question I set for the team: how can someone explore it with their hands rather than through another screen app — and meet only animals that actually exist?</p>
+
+    <h2>What I decided</h2>
+    <ul class="decisions">
+      <li><strong>A physical device, not a game, map or dashboard</strong> — exploring should be something you hold and turn.</li>
+      <li><strong>Real data only.</strong> 44 real species with cited sources; no invented animals.</li>
+      <li><strong>Sound direction.</strong> On DeepCore I set which sounds we needed and a teammate sourced them. On DeepSphere a teammate found 13 sounds and I made the rest.</li>
+      <li><strong>DeepSphere: a periscope you turn by hand.</strong> A ring of six screens rotated by hand (slip ring + angle sensor), a console with a depth wheel, and a web digital twin.</li>
+      <li><strong>Print rules I set.</strong> No supports, thin walls, and snap-fits instead of screws, since I have no threading tools.</li>
+      <li><strong>Modelling.</strong> I modelled DeepSphere v1 entirely myself; for the current version an AI model helps build the CAD.</li>
+    </ul>
+
+    <h2>Result</h2>
+    <p><strong>DeepCore</strong> was assembled from real parts (no 3D printing) and won <strong>1st Place at KMUTT Deep Sea Jam Hackathon 2026</strong>. <strong>DeepSphere</strong> is in progress: the three-layer sphere is not finished, and most of the screens still have problems I’m working through.</p>
+  </div>
+
+  <h2 class="label">Gallery</h2>
+  <div class="gallery">
+    <figure>
+      <img src="../assets/deepcore-deepsphere/hackathon-award.webp" alt="Team holding the 1st Place award board at KMUTT Deep Sea Jam Hackathon 2026" width="640" height="360" loading="lazy">
+      <figcaption>1st Place, KMUTT Deep Sea Jam Hackathon 2026 (DeepCore).</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/deepcore-deepsphere/oled-closeup.webp" alt="Close-up of the DeepCore OLED showing depth, zone and species name" width="1600" height="1600" loading="lazy">
+      <figcaption>DeepCore OLED: depth, ocean zone and the species found.</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/deepcore-deepsphere/digital-twin-explore.webp" alt="DeepSphere web digital twin exploring the deep sea" width="1600" height="900" loading="lazy">
+      <figcaption>DeepSphere web digital twin — exploring.</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/deepcore-deepsphere/digital-twin-discovery.webp" alt="DeepSphere screen showing a discovered deep-sea species" width="1600" height="900" loading="lazy">
+      <figcaption>DeepSphere — a species discovered.</figcaption>
+    </figure>
+  </div>
+
+  <!-- sketches -->
+  <section class="sketches">
+    <h2 class="label">Sketches &amp; process</h2>
+    <div class="gallery">
+      <figure>
+        <img src="../assets/deepcore-deepsphere/deepsphere-sketch-ring.webp" alt="Sketch of a ring of deep-sea viewing screens on a base, turned by hand" width="1600" height="1600" loading="lazy">
+        <figcaption>Early sketch: a ring of deep-sea viewing screens on a base, turned by hand.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <h2 class="label">My role vs AI</h2>
+  <div class="role-ai">
+    <p>Me: team lead; concept, device design, modelling and printing (DeepSphere), assembly and soldering, sound direction. Teammates: marine research, presentation deck, sourcing sounds, presenting. Code: written by AI to my spec; I check it.</p>
+  </div>
+
+  <nav class="pager" aria-label="Project navigation">
+    <a href="../product.html">← All Product &amp; Prototyping work</a>
+    <a href="mofych-commission.html">Next: MOFYCH Commission Website →</a>
+  </nav>
+</article></main>
+
+<footer class="site-foot"><div class="wrap">
+  <a href="mailto:nattanitchafarm@gmail.com">nattanitchafarm@gmail.com</a> · <a href="../about.html">About</a>
+</div></footer>
+</body>
+</html>
