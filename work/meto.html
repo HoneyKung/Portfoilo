@@ -18,53 +18,54 @@
     <a href="../product.html">Product &amp; Prototyping</a>
     <a href="../character.html">Character × Tech</a>
     <a href="../about.html">About</a>
-    <details class="lang-menu"><summary><span class="vh">Language: </span>English</summary><ul><li><a href="#" aria-current="true" lang="en">English</a></li><li><a href="../th/work/meto.html" lang="th" hreflang="th">ไทย</a></li></ul></details><!--/lang-->
+    <details class="lang-menu"><summary aria-label="Language: English">English</summary><ul><li><a href="#" aria-current="true" lang="en">English</a></li><li><a href="../th/work/meto.html" lang="th" hreflang="th">ไทย</a></li></ul></details><!--/lang-->
   </nav>
 </div></header>
 
 <main><article class="wrap">
-  <header class="proj-head">
+  <header class="proj-head side">
   <div class="proj-text">
     <p class="crumb"><a href="../product.html">← Product &amp; Prototyping</a> · <a href="../character.html">Character × Tech</a></p>
 
     <h1>METO — small interactive robot</h1>
     <p class="lede">A small robot that shows emotion, built to ask whether that helps beginners learn block coding — with a web app where learners program it.</p>
+    <p class="tldr"><strong>In short:</strong> A small robot that shows emotion, for my thesis research on learning block coding. I lead a team of 3 and did the concept, CAD, printing, power wiring and the face animations; AI writes the code — in progress, user study not started yet.</p>
 
     <dl class="facts">
       <div><dt>Year</dt><dd>2025 – present (research with my advisor from Year 3, now my thesis)</dd></div>
-      <div><dt>Team / role</dt><dd>3 people — team lead</dd></div>
+      <div><dt>Team / role</dt><dd>Team lead, team of 3</dd></div>
       <div><dt>Tools</dt><dd>ESP32 · Tinkercad · 3D printing · Unity (digital twin) · web app</dd></div>
       <div><dt>Status</dt><dd><span class="status">in progress</span></dd></div>
     </dl>
   </div>
-  <figure class="hero meto-bg">
-    <img src="../assets/meto/meto-3d-color-variants.webp" alt="3D model of the METO robot in three colour variants with a TECH logo pattern" width="1179" height="453" loading="eager">
-    <figcaption>3D model of METO in three colour / TECH-logo variants.</figcaption>
+  <figure class="hero">
+    <img src="../assets/meto/meto-grip-cup.webp" alt="METO robot with 3D-printed oval arms gripping and lifting a cup" width="640" height="360" loading="eager">
+    <figcaption>The real robot: printed oval arms gripping and lifting a cup.</figcaption>
   </figure>
   </header>
 
 
   <div class="story">
     <h2>Problem</h2>
-    <p>The research question: does a small robot that shows emotion help beginners learn block-based programming, compared with one that doesn’t? The robot has to read as a tiny human-like companion, and the web side has to let anyone program it. The study is planned with first-year KMUTT students; the ethics (IRB) documents are still being prepared.</p>
+    <p>The research question: does a small robot that shows emotion help beginners learn block-based programming, compared with one that doesn’t? The robot has to read as a tiny human-like companion, and the web side has to let anyone program it. The study is planned with first-year KMUTT students; the ethics-approval (IRB) documents are still being prepared.</p>
 
     <h2>What I decided</h2>
     <ul class="decisions">
       <li><strong>Arms that clamp and lift, not a claw.</strong> A claw breaks the idea of a small human-like robot. Two joints at the shoulder, and a trapezoid body instead of a box so the arms can close in far enough to grip.</li>
       <li><strong>Make lifting actually work.</strong> The foam-board version could grip but not lift. First fix: rubber on the hand corners. Then printed concave oval arms that take many shapes, with small diamond-shaped studs so objects don’t slip — and a laser distance sensor at arm level (being added) to check whether something was really lifted.</li>
       <li><strong>Wheels by testing, not by guess.</strong> Car wheels on the first prototype → printed tracks (two wheels: the belt slipped off, so I added a middle wheel) → tracks turned poorly, so the next version moves to two wheels plus a ball caster (not yet in CAD).</li>
-      <li><strong>As small as possible.</strong> No heat-set inserts, to keep the robot small. The body is five layers that stack like a tiffin carrier, so it’s easy to assemble yourself and to modify.</li>
+      <li><strong>As small as possible.</strong> No heat-set inserts (metal threads pressed into printed parts with heat), to keep the robot small. The body is five layers that stack like a tiffin carrier, so it’s easy to assemble yourself and to modify.</li>
       <li><strong>A face that reacts.</strong> I designed and animated the screen expressions myself (9 of them). The camera reads the learner’s face to recognise their emotion (smiling / sad / neutral); the robot turns to follow them and can mirror the learner’s expression on its screen face. On the web, the on-screen robot face reacts as the learner codes — happy when the mission checklist is met, love when a star is earned, confused when the code isn’t ready.</li>
       <li><strong>A web app for anyone.</strong> One account type for everyone — teacher or student roles come from joining a class. A skill counts only when code runs without error. No game words like XP or Level on the teacher side. Teachers can set their own tasks, and the AI helper gives hints, not answers. My advisor suggested the missions and the skill map; I worked out the details and drew a 62-piece robot avatar.</li>
     </ul>
 
     <h2>Result</h2>
-    <p>A working robot with two arms, a screen face, an ESP32, two 18650 cells with BMS and USB-C charging; I wired the power myself (fuse, common ground) and it drives wirelessly. The printed oval arms grip and lift a cup. The “METO Robot” web runs on a local server with demo data — no public link yet. <strong>The user study has not started</strong>: IRB documents are in preparation.</p>
+    <p>A working robot with two arms, a screen face, an ESP32, two 18650 cells with BMS and USB-C charging; I wired the power myself (fuse, common ground) and it drives wirelessly. The printed oval arms grip and lift a cup. The “METO Robot” web runs on a local server with demo data — no public link yet. <strong>The user study has not started</strong>: the ethics-approval (IRB) documents are in preparation.</p>
   </div>
 
-  <figure class="hero paper faces">
+  <figure class="hero paper faces" id="faces">
     <img src="../assets/meto/meto-faces-11.webp" alt="Eleven METO screen-face frames: neutral, happy, sad, angry, shocked, sleepy, confused, love, shy, glance left and glance right" width="1600" height="516" loading="lazy">
-    <figcaption>The nine screen expressions I designed and animated for METO, plus two glance frames (11 frames).</figcaption>
+    <figcaption>The nine screen expressions I designed and animated for METO, plus two glance frames (11 frames). Labels are in Thai: neutral, happy, sad, angry, shocked, sleepy, confused, love, shy, glance left, glance right.</figcaption>
   </figure>
 
   <h2 class="label">Versions over time</h2>
@@ -91,8 +92,8 @@
   <h2 class="label">Gallery</h2>
   <div class="gallery grid">
     <figure>
-      <img src="../assets/meto/meto-grip-cup.webp" alt="3D-printed oval arms of METO gripping a cup" width="640" height="360" loading="lazy">
-      <figcaption>Printed concave oval arms gripping and lifting a cup.</figcaption>
+      <img src="../assets/meto/meto-3d-color-variants.webp" alt="3D model of the METO robot in three colour variants with a TECH logo pattern" width="1179" height="453" loading="lazy">
+      <figcaption>3D model of METO in three colour / TECH-logo variants.</figcaption>
     </figure>
     <figure>
       <img src="../assets/meto/meto-arm-tinkercad.webp" alt="METO arm modelled in Tinkercad with a concave inner face covered in small diamond-shaped studs" width="1600" height="867" loading="lazy">

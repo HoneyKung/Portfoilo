@@ -18,7 +18,7 @@
     <a href="../product.html">Product &amp; Prototyping</a>
     <a href="../character.html">Character × Tech</a>
     <a href="../about.html">About</a>
-    <details class="lang-menu"><summary><span class="vh">Language: </span>English</summary><ul><li><a href="#" aria-current="true" lang="en">English</a></li><li><a href="../th/work/magnetic-universe.html" lang="th" hreflang="th">ไทย</a></li></ul></details><!--/lang-->
+    <details class="lang-menu"><summary aria-label="Language: English">English</summary><ul><li><a href="#" aria-current="true" lang="en">English</a></li><li><a href="../th/work/magnetic-universe.html" lang="th" hreflang="th">ไทย</a></li></ul></details><!--/lang-->
   </nav>
 </div></header>
 
@@ -29,11 +29,12 @@
 
     <h1>Magnetic Universe</h1>
     <p class="lede">A 40 × 40 cm wall of light where every magnet you place gets its own ring of light that floats between the sensors — and two rings blend like a small universe.</p>
+    <p class="tldr"><strong>In short:</strong> A 40 × 40 cm light wall where each magnet gets a ring of light. I led the team, came up with the sensing idea, and modelled, printed, wired and soldered it; AI wrote the code from my idea — course project, built and working.</p>
 
     <dl class="facts">
       <div><dt>Year</dt><dd>Jan – May 2026</dd></div>
       <div><dt>Team / role</dt><dd>Team lead</dd></div>
-      <div><dt>Tools</dt><dd>16 Hall sensors · addressable LED strip · Tinkercad · 3D printing</dd></div>
+      <div><dt>Tools</dt><dd>16 Hall sensors (magnetic-field sensors) · addressable LED strip · Tinkercad · 3D printing</dd></div>
       <div><dt>Status</dt><dd><span class="status">course project</span></dd></div>
     </dl>
   </div>
@@ -51,7 +52,7 @@
     <h2>What I decided</h2>
     <ul class="decisions">
       <li><strong>Less hardware, more math.</strong> 16 Hall sensors (4 × 4) on a 400 × 400 mm panel. Read only the four around the magnet and compute its position from their distances, so the magnet doesn’t need to sit on a sensor. This solved both the coordinate mapping and the soldering load.</li>
-      <li><strong>Neighbours, not an average.</strong> I argued against averaging all 16 sensors and had the position computed from the neighbouring group only.</li>
+      <li><strong>Use the nearest sensors, not an average.</strong> I argued against averaging all 16 sensors and had the position computed from the neighbouring group only.</li>
       <li><strong>One ring per magnet.</strong> Each magnet gets one ring of light that “floats” between sensors with the field strength; bring two magnets close and their rings blend into one image.</li>
       <li><strong>Fibre fill, not a thicker frame.</strong> The suggested fix (white printed box, black acrylic, spacing) still showed dots because the acrylic sat close to the LEDs. I packed heat-resistant fibre into the sensor layer: no short circuits at the solder joints, no interference with the Hall sensors, no added weight — and the light spreads evenly.</li>
       <li><strong>Keep the 6 cm frame.</strong> I considered 8 cm, but the panel was already 3–4 kg and mounts at 60°.</li>
@@ -59,7 +60,7 @@
     </ul>
 
     <h2>Result</h2>
-    <p>The panel was built and runs as shown below: magnets on the face light up rings, and two magnets blend. Before committing to the full grid, I tested with four sensors that detection still reached through the diffuser layer.</p>
+    <p>The final build is one 40 × 40 cm panel with 16 sensors, and it runs as shown below: magnets on the face light up rings, and two magnets blend. Before committing to the full grid, I tested with four sensors that detection still reached through the diffuser layer.</p>
   </div>
 
   <h2 class="label">Gallery</h2>

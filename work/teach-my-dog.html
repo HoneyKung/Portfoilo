@@ -18,7 +18,7 @@
     <a href="../product.html">Product &amp; Prototyping</a>
     <a href="../character.html">Character × Tech</a>
     <a href="../about.html">About</a>
-    <details class="lang-menu"><summary><span class="vh">Language: </span>English</summary><ul><li><a href="#" aria-current="true" lang="en">English</a></li><li><a href="../th/work/teach-my-dog.html" lang="th" hreflang="th">ไทย</a></li></ul></details><!--/lang-->
+    <details class="lang-menu"><summary aria-label="Language: English">English</summary><ul><li><a href="#" aria-current="true" lang="en">English</a></li><li><a href="../th/work/teach-my-dog.html" lang="th" hreflang="th">ไทย</a></li></ul></details><!--/lang-->
   </nav>
 </div></header>
 
@@ -29,9 +29,10 @@
 
     <h1>Teach My Dog!</h1>
     <p class="lede">A 2D dog-training game on the web: you show a hand signal to the webcam, and a pixel-art dog responds. The hand-sign model is one I trained on clips I recorded myself.</p>
+    <p class="tldr"><strong>In short:</strong> A web game where you show dog-training hand signals to a webcam. I built the game, recorded every training clip and trained the model; teammates did the report and research — course project, team of 3.</p>
 
     <dl class="facts">
-      <div><dt>Year</dt><dd>Year 3, Term 2</dd></div>
+      <div><dt>Year</dt><dd>Year 3, Term 2 (2026)</dd></div>
       <div><dt>Team / role</dt><dd>Course project, team of 3 — I built the web game, recorded the training clips and trained the model; teammates did the report and research</dd></div>
       <div><dt>Tools</dt><dd>MediaPipe Hands · KNN classifier · web app (Canvas 2D) · built with Antigravity (AI coding tool)</dd></div>
       <div><dt>Status</dt><dd><span class="status">course project</span></dd></div>
@@ -51,7 +52,7 @@
     <ul class="decisions">
       <li><strong>My own data, my own model.</strong> I recorded the training clips myself — 3 clips per signal, 5–15 seconds each, from different angles and distances — instead of using a public dataset.</li>
       <li><strong>Hand landmarks, not raw pixels.</strong> MediaPipe finds 21 points on the hand; each frame becomes 67 values: the points relative to the wrist and scaled to hand size, plus wrist position and movement direction.</li>
-      <li><strong>A small, fast classifier.</strong> A K-nearest-neighbours model (k = 7), exported to the web page so it runs in real time in the browser.</li>
+      <li><strong>A small, fast classifier.</strong> A K-nearest-neighbours model (k = 7; it labels a hand pose by the most similar recorded examples), exported to the web page so it runs in real time in the browser.</li>
       <li><strong>Practice as a game.</strong> Missions teach one signal at a time (other signals are ignored); a correct signal makes the dog act and earns bones, which buy dress-up and room items. After all 8, free play.</li>
     </ul>
 
