@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teach My Dog! — Nattanitcha Promboon</title>
+<meta name="description" content="Teach My Dog!: a 2D dog-training game on the web that recognises eight hand signals through the webcam, using a hand-sign model trained on clips I recorded myself.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../print.css" media="print">
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+  <a class="brand" href="../index.html">Nattanitcha Promboon</a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="../product.html">Product &amp; Prototyping</a>
+    <a href="../character.html">Character × Tech</a>
+    <a href="../about.html">About</a>
+    <details class="lang-menu"><summary><span class="vh">Language: </span>English</summary><ul><li><a href="#" aria-current="true" lang="en">English</a></li><li><a href="../th/work/teach-my-dog.html" lang="th" hreflang="th">ไทย</a></li></ul></details><!--/lang-->
+  </nav>
+</div></header>
+
+<main><article class="wrap">
+  <header class="proj-head side">
+  <div class="proj-text">
+    <p class="crumb"><a href="../character.html">← Character × Tech</a></p>
+
+    <h1>Teach My Dog!</h1>
+    <p class="lede">A 2D dog-training game on the web: you show a hand signal to the webcam, and a pixel-art dog responds. The hand-sign model is one I trained on clips I recorded myself.</p>
+
+    <dl class="facts">
+      <div><dt>Year</dt><dd>Year 3, Term 2</dd></div>
+      <div><dt>Team / role</dt><dd>Course project, team of 3 — I built the web game, recorded the training clips and trained the model; teammates did the report and research</dd></div>
+      <div><dt>Tools</dt><dd>MediaPipe Hands · KNN classifier · web app (Canvas 2D) · built with Antigravity (AI coding tool)</dd></div>
+      <div><dt>Status</dt><dd><span class="status">course project</span></dd></div>
+    </dl>
+  </div>
+  <figure class="hero">
+    <img src="../assets/teach-my-dog/teach-my-dog-web.webp" alt="Teach My Dog web game: camera box, pixel-art dog in a room, a mission list starting with Sit, and Train, Shop, Dress Up and Decorate buttons" width="757" height="648" loading="eager">
+    <figcaption>The web game running locally. The camera box (top left) is empty here — it needs a real person’s hands in front of the webcam.</figcaption>
+  </figure>
+  </header>
+
+  <div class="story">
+    <h2>Problem</h2>
+    <p>New dog owners often can’t tell whether the hand signals they give are clear and correct, and there is nothing to check them against. The project: let people practise eight standard dog-training hand signals (Sit, Down, Stay, Come, Heel, No/Stop, Shake, Good/Yes) on a virtual dog that reacts right away.</p>
+
+    <h2>What I decided</h2>
+    <ul class="decisions">
+      <li><strong>My own data, my own model.</strong> I recorded the training clips myself — 3 clips per signal, 5–15 seconds each, from different angles and distances — instead of using a public dataset.</li>
+      <li><strong>Hand landmarks, not raw pixels.</strong> MediaPipe finds 21 points on the hand; each frame becomes 67 values: the points relative to the wrist and scaled to hand size, plus wrist position and movement direction.</li>
+      <li><strong>A small, fast classifier.</strong> A K-nearest-neighbours model (k = 7), exported to the web page so it runs in real time in the browser.</li>
+      <li><strong>Practice as a game.</strong> Missions teach one signal at a time (other signals are ignored); a correct signal makes the dog act and earns bones, which buy dress-up and room items. After all 8, free play.</li>
+    </ul>
+
+    <h2>Result</h2>
+    <p>A working web game. The model was trained on 1,897 samples across the 8 signals; 5-fold cross-validation accuracy was 95.6% (± 0.6%). Demo clips of it in use are kept privately (no public link).</p>
+  </div>
+
+  <h2 class="label">Gallery</h2>
+  <div class="gallery grid">
+    <figure>
+      <img src="../assets/teach-my-dog/training-clip-good.webp" alt="Webcam frame of a hand giving a thumbs-up sign in front of a blue T-shirt" width="1026" height="543" loading="lazy">
+      <figcaption>A frame from my own training clips — the Good/Yes signal (thumbs up), one of the 8 signals.</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/teach-my-dog/confusion-matrix.webp" alt="Confusion matrix for the eight hand signals: sit, down, stay, come, heel, stop, shake, good" width="1200" height="900" loading="lazy">
+      <figcaption>Confusion matrix from training — predicted vs actual signal for each of the 8 hand signals.</figcaption>
+    </figure>
+  </div>
+
+  <h2 class="label">My role vs AI</h2>
+  <div class="role-ai">
+    <p>Me: the web game (built with Antigravity, an AI coding tool), recording every training clip, and training the model. Teammates: the report and background research.</p>
+  </div>
+
+  <nav class="pager" aria-label="Project navigation">
+    <a href="../character.html">← All Character × Tech work</a>
+    <a href="meto.html">Next: METO →</a>
+  </nav>
+</article></main>
+
+<footer class="site-foot"><div class="wrap">
+  <a href="mailto:nattanitchafarm@gmail.com">nattanitchafarm@gmail.com</a> · <a href="../about.html">About</a>
+</div></footer>
+<script src="../lightbox.js" defer></script>
+</body>
+</html>

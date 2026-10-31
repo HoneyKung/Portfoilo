@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Digital Puzzle Box — ณัฏฐณิชา พรหมบุญ</title>
+<meta name="description" content="Digital Puzzle Box: บอร์ดจริงที่ควบคุมกล่องปริศนาดิจิทัล มีปริศนา 6 แบบ และกุญแจจริงที่ซ่อนไว้">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="../../style.css">
+<link rel="stylesheet" href="../../print.css" media="print">
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+  <a class="brand" href="../index.html">ณัฏฐณิชา พรหมบุญ</a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="../product.html">ผลิตภัณฑ์และต้นแบบ</a>
+    <a href="../character.html">ตัวละคร × เทคโนโลยี</a>
+    <a href="../about.html">เกี่ยวกับฉัน</a>
+    <details class="lang-menu"><summary><span class="vh">ภาษา: </span>ไทย</summary><ul><li><a href="../../work/digital-puzzle-box.html" lang="en" hreflang="en">English</a></li><li><a href="#" aria-current="true" lang="th">ไทย</a></li></ul></details><!--/lang-->
+  </nav>
+</div></header>
+
+<main><article class="wrap">
+  <header class="proj-head side">
+  <div class="proj-text">
+    <p class="crumb"><a href="../product.html">← ผลิตภัณฑ์และต้นแบบ</a></p>
+
+    <h1>Digital Puzzle Box</h1>
+    <p class="lede">บอร์ดจริงที่ทำหน้าที่เป็นตัวควบคุมกล่องปริศนาที่อยู่บนจอ — เลือกด้าน แก้ปริศนาของด้านนั้นแบบดิจิทัล แล้วหากุญแจจริงเพื่อจบเกม</p>
+
+    <dl class="facts">
+      <div><dt>ปี</dt><dd>ปี 2 เทอม 2</dd></div>
+      <div><dt>ทีม / บทบาท</dt><dd>หัวหน้าทีม</dd></div>
+      <div><dt>เครื่องมือ</dt><dd>Arduino · Processing · เบรดบอร์ด · เซอร์โว · โพเทนชิโอมิเตอร์ · LED</dd></div>
+      <div><dt>สถานะ</dt><dd><span class="status">เสร็จแล้ว</span></dd></div>
+    </dl>
+  </div>
+  <figure class="hero">
+    <img src="../../assets/digital-puzzle-box/puzzle-box-board.webp" alt="Overview of the Digital Puzzle Box board with buttons, LEDs and wiring" width="960" height="540" loading="eager">
+    <figcaption>บอร์ดที่มาแทนกล่องแบบพลิกได้</figcaption>
+  </figure>
+  </header>
+
+
+  <div class="story">
+    <h2>โจทย์</h2>
+    <p>กล่องปริศนาทั่วไปแก้ด้วยมือในโลกจริง ฉันอยากได้ฝาแฝดดิจิทัล: ถือของจริงเหมือนคอนโซล ส่วนปริศนาอยู่บนจอ — ปริศนาที่เล่นได้เฉพาะแบบดิจิทัล — การแตะของจริงจึงเปลี่ยนโลกดิจิทัล</p>
+
+    <h2>สิ่งที่ฉันตัดสินใจ</h2>
+    <ul class="decisions">
+      <li><strong>แผนแรก: ใช้กล่องจริงเป็นตัวควบคุม</strong> หมุนกล่องไปด้านไหน กล่องดิจิทัลบนจอก็หมุนไปด้านเดียวกัน</li>
+      <li><strong>เปลี่ยนแผนเมื่อเซนเซอร์ใช้ไม่ได้</strong> ไจโร (MPU) ใช้งานไม่ได้เลย ฉันจึงเปลี่ยนจากกล่องที่พลิก มาเป็นบอร์ดแบนที่เลือกได้ว่าจะเล่นด้านไหน</li>
+      <li><strong>ปริศนา 6 แบบ ด้านละหนึ่งแบบ</strong> — Color Match, Simon Says, Maze, Distance Puzzle, Keyhole และ Clock Time</li>
+      <li><strong>กุญแจดอกสุดท้ายเป็นของจริง</strong> หน้าจอ Keyhole แค่ใบ้ว่ากุญแจซ่อนอยู่ตรงไหนบนบอร์ดจริง ผู้เล่นต้องหาแล้วเสียบเอง ผ่านครบทุกด่านแล้วกล่องสมบัติข้างบอร์ดจะเปิด ข้างในมีขนม</li>
+    </ul>
+
+    <h2>ผลลัพธ์</h2>
+    <p>สร้างบนเบรดบอร์ด โดยมีเงื่อนไขชนะรวมเดียวของทั้ง 6 เกม</p>
+  </div>
+
+  <h2 class="label">แกลเลอรี</h2>
+  <div class="gallery">
+    <figure>
+      <img src="../../assets/digital-puzzle-box/controls-leds.webp" alt="Buttons, potentiometer and LEDs on the board" width="960" height="540" loading="lazy">
+      <figcaption>ปุ่ม โพเทนชิโอมิเตอร์ และ LED</figcaption>
+    </figure>
+    <figure>
+      <img src="../../assets/digital-puzzle-box/servo-leds.webp" alt="Servo and LEDs on the board" width="960" height="540" loading="lazy">
+      <figcaption>เซอร์โวและ LED</figcaption>
+    </figure>
+    <figure>
+      <img src="../../assets/digital-puzzle-box/memory-game.webp" alt="Screen of the light-sequence memory game" width="960" height="944" loading="lazy">
+      <figcaption>เกมจำลำดับแสง</figcaption>
+    </figure>
+    <figure>
+      <img src="../../assets/digital-puzzle-box/maze-game.webp" alt="Maze game screen next to the Arduino IDE" width="960" height="510" loading="lazy">
+      <figcaption>หน้าจอเขาวงกต (ฉันสร้างเอง) คู่กับ Arduino IDE</figcaption>
+    </figure>
+    <figure>
+      <img src="../../assets/digital-puzzle-box/clock-game.webp" alt="Clock-time game screen next to the Arduino IDE" width="960" height="510" loading="lazy">
+      <figcaption>เกมตั้งเวลานาฬิกา คู่กับ Arduino IDE</figcaption>
+    </figure>
+  </div>
+
+  <h2 class="label">ส่วนของฉัน vs AI</h2>
+  <div class="role-ai">
+    <p>ฉัน: คอนเซปต์และออกแบบอุปกรณ์ วงจรบนเบรดบอร์ด UI ตรรกะ และการแก้ปัญหา; หน้าจอเขาวงกต ระบบที่เชื่อมหน้าจอต่าง ๆ และโค้ด Arduino — ผสมโค้ดที่เขียนเองกับโค้ดที่ AI เขียน เพื่อนในทีม: หน้าจอ Processing อื่น ๆ เอกสาร และการนำเสนอ</p>
+  </div>
+
+  <nav class="pager" aria-label="Project navigation">
+    <a href="../product.html">← ผลงานผลิตภัณฑ์และต้นแบบทั้งหมด</a>
+    <a href="oc-companion.html">ถัดไป: OC Companion →</a>
+  </nav>
+</article></main>
+
+<footer class="site-foot"><div class="wrap">
+  <a href="mailto:nattanitchafarm@gmail.com">nattanitchafarm@gmail.com</a> · <a href="../about.html">เกี่ยวกับฉัน</a>
+</div></footer>
+<script src="../../lightbox.js" defer></script>
+</body>
+</html>

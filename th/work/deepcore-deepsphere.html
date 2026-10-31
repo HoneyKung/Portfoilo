@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DeepCore → DeepSphere — ณัฏฐณิชา พรหมบุญ</title>
+<meta name="description" content="DeepCore และ DeepSphere: เครื่องสำรวจทะเลลึกที่ใช้มือเล่น สร้างจากข้อมูลสัตว์จริง DeepCore ได้รางวัลที่ 1 KMUTT Deep Sea Jam Hackathon 2026">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="../../style.css">
+<link rel="stylesheet" href="../../print.css" media="print">
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+  <a class="brand" href="../index.html">ณัฏฐณิชา พรหมบุญ</a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="../product.html">ผลิตภัณฑ์และต้นแบบ</a>
+    <a href="../character.html">ตัวละคร × เทคโนโลยี</a>
+    <a href="../about.html">เกี่ยวกับฉัน</a>
+    <details class="lang-menu"><summary><span class="vh">ภาษา: </span>ไทย</summary><ul><li><a href="../../work/deepcore-deepsphere.html" lang="en" hreflang="en">English</a></li><li><a href="#" aria-current="true" lang="th">ไทย</a></li></ul></details><!--/lang-->
+  </nav>
+</div></header>
+
+<main><article class="wrap">
+  <header class="proj-head side">
+  <div class="proj-text">
+    <p class="crumb"><a href="../product.html">← ผลิตภัณฑ์และต้นแบบ</a></p>
+
+    <h1>DeepCore → DeepSphere</h1>
+    <p class="lede">เครื่องสำรวจทะเลลึกที่หมุนและหมุนปรับด้วยมือ ทุกตัวที่เจอเป็นสัตว์ที่มีอยู่จริง DeepCore ได้รางวัลที่ 1 ในแฮกกาธอน; DeepSphere คือเวอร์ชันที่ฉันกำลังสร้างอยู่</p>
+
+    <dl class="facts">
+      <div><dt>ปี</dt><dd>2026 – ปัจจุบัน</dd></div>
+      <div><dt>ทีม / บทบาท</dt><dd>หัวหน้าทีม</dd></div>
+      <div><dt>เครื่องมือ</dt><dd>ESP32 · OLED · จอยสติ๊ก · สลิปริง + เซนเซอร์มุม · พิมพ์ 3D · เว็บ 3D / ฝาแฝดดิจิทัล (digital twin)</dd></div>
+      <div><dt>สถานะ</dt><dd><span class="status">เสร็จแล้ว</span> DeepCore — รางวัลที่ 1<br><span class="status">กำลังทำ</span> DeepSphere</dd></div>
+    </dl>
+  </div>
+  <figure class="hero">
+    <img src="../../assets/deepcore-deepsphere/device-setup.webp" alt="DeepCore set up on a desk: ESP32 on a breadboard, buttons, OLED, joystick, a clear ball on a rotating base and a laptop showing a 3D web scene" width="1600" height="1600" loading="eager">
+    <figcaption>DeepCore ที่ประกอบจากอุปกรณ์จริง: ESP32 บนเบรดบอร์ด ปุ่มสามสี จอ OLED จอยสติ๊ก ลูกบอลใสที่มีแมงกะพรุนบนฐานหมุน และฉาก 3D บนเว็บที่ทำงานสดบนแล็ปท็อป</figcaption>
+  </figure>
+  </header>
+
+
+  <div class="story">
+    <h2>โจทย์</h2>
+    <p>ธีมของแฮกกาธอนคือทะเลลึก คำถามที่ฉันตั้งให้ทีม: จะทำอย่างไรให้คนสำรวจทะเลลึกด้วยมือ แทนที่จะเป็นแอปอีกหน้าจอหนึ่ง — และได้เจอเฉพาะสัตว์ที่มีอยู่จริง</p>
+
+    <h2>สิ่งที่ฉันตัดสินใจ</h2>
+    <ul class="decisions">
+      <li><strong>เป็นอุปกรณ์จริง ไม่ใช่เกม แผนที่ หรือแดชบอร์ด</strong> — การสำรวจควรเป็นสิ่งที่ถือและหมุนได้</li>
+      <li><strong>ใช้ข้อมูลจริงเท่านั้น</strong> ค้นข้อมูลสัตว์จริง 44 สปีชีส์ แต่ละตัวมีแหล่งอ้างอิง; ไม่มีสัตว์ที่แต่งขึ้น</li>
+      <li><strong>กำหนดทิศทางเสียง</strong> ใน DeepCore ฉันกำหนดว่าต้องใช้เสียงอะไร แล้วเพื่อนในทีมหามา ใน DeepSphere เพื่อนในทีมหาเสียงได้ 13 เสียง ที่เหลือฉันทำเอง</li>
+      <li><strong>DeepSphere: กล้องเพอริสโคปที่หมุนด้วยมือ</strong> วงจอ 6 จอที่หมุนด้วยมือ (สลิปริง + เซนเซอร์มุม) คอนโซลที่มีล้อปรับความลึก และฝาแฝดดิจิทัลบนเว็บ</li>
+      <li><strong>กติกาการพิมพ์ที่ฉันตั้ง</strong> ไม่ใช้ซัพพอร์ต ผนังบาง และใช้สแนปฟิตแทนน็อต เพราะฉันไม่มี heat-set insert</li>
+      <li><strong>การขึ้นโมเดล</strong> ฉันขึ้นโมเดล DeepSphere v1 เองทั้งหมด; เวอร์ชันปัจจุบันมีโมเดล AI ช่วยสร้าง CAD</li>
+    </ul>
+
+    <h2>ผลลัพธ์</h2>
+    <p><strong>DeepCore</strong> ประกอบจากอุปกรณ์จริง (ไม่ได้พิมพ์ 3D) และได้<strong>รางวัลที่ 1 KMUTT Deep Sea Jam Hackathon 2026</strong> <strong>DeepSphere</strong> กำลังทำ: วงจอ 6 จอประกอบแล้ว แต่จอส่วนใหญ่ต้องเดินสายใหม่; ทรงกลม 3 ชั้นยังเป็นคอนเซปต์ระยะยาว</p>
+  </div>
+
+  <h2 class="label">แกลเลอรี</h2>
+  <div class="gallery">
+    <figure>
+      <img src="../../assets/deepcore-deepsphere/hackathon-award.webp" alt="Team holding the 1st Place award board at KMUTT Deep Sea Jam Hackathon 2026" width="640" height="360" loading="lazy">
+      <figcaption>รางวัลที่ 1 KMUTT Deep Sea Jam Hackathon 2026 (DeepCore)</figcaption>
+    </figure>
+    <figure>
+      <img src="../../assets/deepcore-deepsphere/oled-closeup.webp" alt="Close-up of the DeepCore OLED showing depth, zone and species name" width="1600" height="1600" loading="lazy">
+      <figcaption>จอ OLED ของ DeepCore: ความลึก โซนมหาสมุทร และสปีชีส์ที่พบ</figcaption>
+    </figure>
+    <figure>
+      <img src="../../assets/deepcore-deepsphere/deepsphere-v1-tinkercad.webp" alt="DeepSphere v1 modelled in Tinkercad: base, turntable, hinged screen frames and mounts" width="1600" height="866" loading="lazy">
+      <figcaption>DeepSphere เวอร์ชันแรกที่ฉันขึ้นโมเดลเองใน Tinkercad — ฐาน แป้นหมุน กรอบจอแบบบานพับ และตัวยึด — ก่อนเปลี่ยนเป็นเวอร์ชัน 2 ที่ใช้ AI ช่วยออกแบบเพื่อทุ่นแรงวัดขนาดฮาร์ดแวร์</figcaption>
+    </figure>
+    <figure>
+      <img src="../../assets/deepcore-deepsphere/deepsphere-v1-print-plates.webp" alt="DeepSphere v1 parts split across print plates in Creality Print" width="1360" height="957" loading="lazy">
+      <figcaption>ชิ้นส่วนเวอร์ชันแรกแบ่งลงเพลตพิมพ์ใน Creality Print</figcaption>
+    </figure>
+    <figure>
+      <img src="../../assets/deepcore-deepsphere/deepsphere-twin-surface.webp" alt="DeepSphere web digital twin at the surface: 3D model of the six-screen hexagonal ring" width="1440" height="900" loading="lazy">
+      <figcaption>ฝาแฝดดิจิทัลของ DeepSphere บนเว็บ ที่ผิวน้ำ (0 ม.): โมเดล 3D ของวงจอหกเหลี่ยม 6 จอ ภาพทะเลต่อเนื่องข้ามจอ มาตรวัดความลึก และข้อมูลนำทาง</figcaption>
+    </figure>
+    <figure>
+      <img src="../../assets/deepcore-deepsphere/deepsphere-twin-species-card.webp" alt="DeepSphere species card for the reef manta ray, Mobula alfredi" width="1440" height="900" loading="lazy">
+      <figcaption>Collect: การ์ดสปีชีส์ (กระเบนราหู <i>Mobula alfredi</i>) มีชื่อวิทยาศาสตร์ ข้อเท็จจริง ช่วงความลึก และแหล่งอ้างอิง (FishBase; Braun et al. 2014)</figcaption>
+    </figure>
+    <figure>
+      <img src="../../assets/deepcore-deepsphere/deepsphere-twin-analyze.webp" alt="DeepSphere analysis panel: 2 of 8 specimens collected" width="1440" height="900" loading="lazy">
+      <figcaption>Analyze: เก็บตัวอย่างได้ 2 จาก 8 ชนิด; ชนิดที่ยังไม่พบจะบอกว่าอาศัยอยู่ชั้นไหน</figcaption>
+    </figure>
+  </div>
+
+  <!-- sketches -->
+  <section class="sketches">
+    <h2 class="label">สเก็ตช์และกระบวนการ</h2>
+    <div class="gallery">
+      <figure>
+        <img src="../../assets/deepcore-deepsphere/deepsphere-sketch-ring.webp" alt="Sketch of a three-layer sphere on a base, turned by hand" width="1600" height="1600" loading="lazy">
+        <figcaption>ภาพร่างแรก: ทรงกลม 3 ชั้น — ยิ่งชั้นในยิ่งมืด เหมือนแสงที่จางลงตามความลึก — หมุนด้วยมือบนฐาน</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <h2 class="label">ส่วนของฉัน vs AI</h2>
+  <div class="role-ai">
+    <p>ฉัน: หัวหน้าทีม; คอนเซปต์ ออกแบบอุปกรณ์ ขึ้นโมเดลและพิมพ์ (DeepSphere) ประกอบและบัดกรี กำหนดทิศทางเสียง เพื่อนในทีม: ค้นข้อมูลทางทะเล ทำสไลด์นำเสนอ หาเสียง และนำเสนอ โค้ด: AI เขียนตามสเปกของฉัน ฉันตรวจเอง</p>
+  </div>
+
+  <nav class="pager" aria-label="Project navigation">
+    <a href="../product.html">← ผลงานผลิตภัณฑ์และต้นแบบทั้งหมด</a>
+    <a href="mofych-commission.html">ถัดไป: เว็บไซต์คอมมิชชัน MOFYCH →</a>
+  </nav>
+</article></main>
+
+<footer class="site-foot"><div class="wrap">
+  <a href="mailto:nattanitchafarm@gmail.com">nattanitchafarm@gmail.com</a> · <a href="../about.html">เกี่ยวกับฉัน</a>
+</div></footer>
+<script src="../../lightbox.js" defer></script>
+</body>
+</html>

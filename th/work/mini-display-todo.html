@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mini Display To-Do List — ณัฏฐณิชา พรหมบุญ</title>
+<meta name="description" content="Mini Display To-Do List: แนวคิดอุปกรณ์ตั้งโต๊ะขนาดเล็กที่แสดงเฉพาะงานถัดไป มีปุ่ม Done ปุ่มดูความคืบหน้า และไฟเตือนกำหนดส่ง">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="../../style.css">
+<link rel="stylesheet" href="../../print.css" media="print">
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+  <a class="brand" href="../index.html">ณัฏฐณิชา พรหมบุญ</a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="../product.html">ผลิตภัณฑ์และต้นแบบ</a>
+    <a href="../character.html">ตัวละคร × เทคโนโลยี</a>
+    <a href="../about.html">เกี่ยวกับฉัน</a>
+    <details class="lang-menu"><summary><span class="vh">ภาษา: </span>ไทย</summary><ul><li><a href="../../work/mini-display-todo.html" lang="en" hreflang="en">English</a></li><li><a href="#" aria-current="true" lang="th">ไทย</a></li></ul></details><!--/lang-->
+  </nav>
+</div></header>
+
+<main><article class="wrap">
+  <header class="proj-head">
+  <div class="proj-text">
+    <p class="crumb"><a href="../product.html">← ผลิตภัณฑ์และต้นแบบ</a></p>
+
+    <h1>Mini Display To-Do List</h1>
+    <p class="lede">แนวคิดอุปกรณ์ตั้งโต๊ะขนาดเล็กที่แสดงเฉพาะงานที่ต้องทำถัดไป — จะได้ไม่ต้องหยิบโทรศัพท์ขึ้นมาเช็กรายการ</p>
+
+    <dl class="facts">
+      <div><dt>ปี</dt><dd>ปี 3 เทอม 1</dd></div>
+      <div><dt>ทีม / บทบาท</dt><dd>มินิโปรเจกต์ในวิชา ทีม 3 คน — ฉันออกแบบคอนเซปต์ ทำไดอะแกรม ภาพต้นแบบ และเลือกอุปกรณ์</dd></div>
+      <div><dt>เครื่องมือ</dt><dd>ESP32 · OLED · LED · Firebase Realtime Database · เว็บแอป</dd></div>
+      <div><dt>สถานะ</dt><dd><span class="status">แนวคิด</span></dd></div>
+    </dl>
+  </div>
+  <figure class="hero paper">
+    <img src="../../assets/mini-display-todo/todo-colour-variants.webp" alt="Concept render of the device in four colours: screen, round red button and purple triangle button" width="588" height="196" loading="eager" style="width:auto;max-width:100%;margin:0 auto">
+    <figcaption>ภาพเรนเดอร์แนวคิด 4 สี: จอ ปุ่มกลม Done และปุ่มสามเหลี่ยม Progress</figcaption>
+  </figure>
+  </header>
+
+  <div class="story">
+    <h2>โจทย์</h2>
+    <p>ระหว่างทำงานหน้าคอมพิวเตอร์ เราหยิบโทรศัพท์ขึ้นมาเช็ก To-Do List — แล้วก็เผลอไถฟีดหรืออ่านแจ้งเตือนอื่น อุปกรณ์ IoT ประเภทป้ายไฟแจ้งเตือนที่มีอยู่ส่วนใหญ่แค่แสดงผลทางเดียว เราอัปเดตอะไรกลับไม่ได้</p>
+
+    <h2>ไอเดีย</h2>
+    <ul class="decisions">
+      <li><strong>โฟกัสทีละงาน</strong> จอ OLED แสดงเฉพาะงานแรกที่ต้องทำ</li>
+      <li><strong>สื่อสารสองทาง</strong> กดปุ่มกลม Done งานจะถูกบันทึกว่าเสร็จบนคลาวด์และงานถัดไปจะขึ้นมา; ปุ่มสามเหลี่ยม Progress แสดงว่างานวันนี้ทำไปได้กี่เปอร์เซ็นต์</li>
+      <li><strong>ใช้ไฟ ไม่ใช่โทรศัพท์</strong> ไฟ LED ติดค้างเมื่องานเลยกำหนดส่ง</li>
+      <li><strong>น่าใช้ วางบนโต๊ะสวย</strong> รูปทรงได้แรงบันดาลใจจากเครื่องเล่นเกมพกพาแบบเรโทร</li>
+      <li><strong>การเชื่อมต่อ</strong> สร้างและแก้งานบนเว็บแอป เก็บใน Firebase Realtime Database แล้ว ESP32 ดึงข้อมูลผ่าน Wi-Fi; เทียบกำหนดส่งกับเวลาจากอินเทอร์เน็ต (NTP)</li>
+    </ul>
+
+    <h2>ผลลัพธ์</h2>
+    <p>เป็นแนวคิดที่นำเสนอในวิชา ขั้นต่อไปที่วางไว้คือใช้แบตเตอรี่ และเชื่อมกับแอปอย่าง Google Tasks หรือ Trello</p>
+  </div>
+
+  <h2 class="label">ส่วนของฉัน</h2>
+  <div class="role-ai">
+    <p>ฉัน: ออกแบบคอนเซปต์ ทำไดอะแกรม ภาพต้นแบบ และเลือกอุปกรณ์ที่ใช้ เพื่อน: ทำรายงานและค้นคว้า</p>
+  </div>
+
+  <nav class="pager" aria-label="Project navigation">
+    <a href="../product.html">← ผลงานผลิตภัณฑ์และต้นแบบทั้งหมด</a>
+    <a href="oc-chat.html">ถัดไป: OC Chat →</a>
+  </nav>
+</article></main>
+
+<footer class="site-foot"><div class="wrap">
+  <a href="mailto:nattanitchafarm@gmail.com">nattanitchafarm@gmail.com</a> · <a href="../about.html">เกี่ยวกับฉัน</a>
+</div></footer>
+<script src="../../lightbox.js" defer></script>
+</body>
+</html>

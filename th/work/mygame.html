@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mygame — ณัฏฐณิชา พรหมบุญ</title>
+<meta name="description" content="Mygame: ต้นแบบเกมเอาชีวิตรอดและบริหารทรัพยากรใน Godot ที่ขับเคลื่อนด้วยนิสัยของตัวละคร">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="../../style.css">
+<link rel="stylesheet" href="../../print.css" media="print">
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+  <a class="brand" href="../index.html">ณัฏฐณิชา พรหมบุญ</a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="../product.html">ผลิตภัณฑ์และต้นแบบ</a>
+    <a href="../character.html">ตัวละคร × เทคโนโลยี</a>
+    <a href="../about.html">เกี่ยวกับฉัน</a>
+    <details class="lang-menu"><summary><span class="vh">ภาษา: </span>ไทย</summary><ul><li><a href="../../work/mygame.html" lang="en" hreflang="en">English</a></li><li><a href="#" aria-current="true" lang="th">ไทย</a></li></ul></details><!--/lang-->
+  </nav>
+</div></header>
+
+<main><article class="wrap">
+  <header class="proj-head">
+  <div class="proj-text">
+    <p class="crumb"><a href="../character.html">← ตัวละคร × เทคโนโลยี</a></p>
+
+    <h1>Mygame</h1>
+    <p class="lede">ต้นแบบระยะแรกใน Godot ของเกมเอาชีวิตรอดและบริหารทรัพยากร ที่ตัวละครมีพฤติกรรมสมจริงและปรับแต่งได้ละเอียด</p>
+
+    <dl class="facts">
+      <div><dt>ปี</dt><dd>ปี 4 เทอม 1</dd></div>
+      <div><dt>ทีม / บทบาท</dt><dd>ทำคนเดียว — ออกแบบเกม</dd></div>
+      <div><dt>เครื่องมือ</dt><dd>Godot</dd></div>
+      <div><dt>สถานะ</dt><dd><span class="status">ต้นแบบ</span> ต้นแบบ Godot เล็ก ๆ 2 ตัวที่ทำงานได้</dd></div>
+    </dl>
+  </div>
+  <figure class="hero dark">
+    <img src="../../assets/mygame/mygame-p2-night-planning.webp" alt="Mygame prototype night-planning screen assigning characters to sleep, guard or explore" width="1280" height="720" loading="eager">
+    <figcaption>วางแผนกลางคืน: ผู้เล่นกำหนดให้ตัวละครแต่ละตัว นอน เฝ้ายาม หรือออกสำรวจ; แต่ละตัวตอบตามนิสัยและอารมณ์ เช่น Mira ปฏิเสธโกดังที่อันตราย และ Sana ต่อรองขอคู่ไปด้วย (ตัวละครเป็นกล่องชั่วคราว)</figcaption>
+  </figure>
+  </header>
+
+  <div class="story">
+    <h2>โจทย์</h2>
+    <p>ถ้าตัวละครที่ขับเคลื่อนด้วย AI ทำทุกอย่างเอง ผู้เล่นก็ไม่เหลืออะไรให้เล่น เกมต้องมีทั้งตัวละครที่มีชีวิต และงานจริงให้ผู้เล่นทำไปพร้อมกัน</p>
+
+    <h2>สิ่งที่ฉันตัดสินใจ</h2>
+    <ul class="decisions">
+      <li><strong>พื้นฐานการเอาชีวิตรอด (กิน นอน พัก) เรียบง่ายและเชื่อถือได้</strong> แบบ This War of Mine / Sheltered</li>
+      <li><strong>การบริหารคือหน้าที่ของผู้เล่น</strong></li>
+      <li><strong>นิสัยสร้างเรื่องราว</strong> นิสัยของตัวละครขับเคลื่อนความสัมพันธ์และเหตุการณ์ — “ไม่อย่างนั้น AI จะทำทุกอย่างเองและผู้เล่นจะไม่มีอะไรให้เล่น” ในต้นแบบมี 22 นิสัย วางแผนไว้ 100+</li>
+    </ul>
+
+    <h2>ผลลัพธ์</h2>
+    <p>ต้นแบบ Godot เล็ก ๆ 2 ตัวที่ทำงานได้ (ตัวละคร AI; การบาดเจ็บและการสำรวจ) พร้อมเทสอัตโนมัติ ยังไม่ใช่เกมที่เสร็จ</p>
+  </div>
+
+  <h2 class="label">แกลเลอรี</h2>
+  <div class="gallery grid">
+    <figure>
+      <img src="../../assets/mygame/mygame-p1-traits-conflict.webp" alt="Prototype 1: a character panel listing traits and scored options, with a speech bubble" width="1280" height="720" loading="lazy">
+      <figcaption>ต้นแบบ 1: แผงของ Mira แสดงนิสัยของเธอและตัวเลือกพร้อมคะแนนที่อยู่เบื้องหลังการกระทำถัดไป ขณะที่ Tobin สวนกลับคำขอในบับเบิลคำพูด (ตัวละครเป็นกล่องชั่วคราว)</figcaption>
+    </figure>
+    <figure>
+      <img src="../../assets/mygame/mygame-p2-danger-pause.webp" alt="Prototype 2: the world pauses while the player chooses sneak, flee or fight" width="1280" height="720" loading="lazy">
+      <figcaption>ถูกจับได้ระหว่างหาของ: โลกหยุดชั่วคราว ให้ผู้เล่นเลือก ลอบ หนี หรือสู้ โดยโอกาสสำเร็จขึ้นกับที่กำบัง ของที่แบก และทักษะ (ตัวละครเป็นกล่องชั่วคราว)</figcaption>
+    </figure>
+  </div>
+
+  <h2 class="label">ส่วนของฉัน vs AI</h2>
+  <div class="role-ai">
+    <p>ฉัน: ออกแบบเกมและโครงสร้างสามชั้นข้างบน AI: Codex เขียนโค้ด Godot จากใบสั่งงานของฉัน; Claude Code วางแผนและตรวจเทสกับภาพหน้าจอ ฉันเป็นคนตัดสินดีไซน์และตัดสินผลทุกครั้ง</p>
+  </div>
+
+  <nav class="pager" aria-label="Project navigation">
+    <a href="../character.html">← ผลงานตัวละคร × เทคโนโลยีทั้งหมด</a>
+    <a href="character-design.html">ถัดไป: ออกแบบตัวละคร →</a>
+  </nav>
+</article></main>
+
+<footer class="site-foot"><div class="wrap">
+  <a href="mailto:nattanitchafarm@gmail.com">nattanitchafarm@gmail.com</a> · <a href="../about.html">เกี่ยวกับฉัน</a>
+</div></footer>
+<script src="../../lightbox.js" defer></script>
+</body>
+</html>

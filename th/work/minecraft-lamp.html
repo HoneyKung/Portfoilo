@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>โคมไฟพิกเซล Minecraft — ณัฏฐณิชา พรหมบุญ</title>
+<meta name="description" content="โคมไฟพิกเซล Minecraft: โคมไฟพิกเซลพิมพ์ 3D ใช้ ESP32 และ LED แบบ addressable ควบคุมจากโทรศัพท์">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="../../style.css">
+<link rel="stylesheet" href="../../print.css" media="print">
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+  <a class="brand" href="../index.html">ณัฏฐณิชา พรหมบุญ</a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="../product.html">ผลิตภัณฑ์และต้นแบบ</a>
+    <a href="../character.html">ตัวละคร × เทคโนโลยี</a>
+    <a href="../about.html">เกี่ยวกับฉัน</a>
+    <details class="lang-menu"><summary><span class="vh">ภาษา: </span>ไทย</summary><ul><li><a href="../../work/minecraft-lamp.html" lang="en" hreflang="en">English</a></li><li><a href="#" aria-current="true" lang="th">ไทย</a></li></ul></details><!--/lang-->
+  </nav>
+</div></header>
+
+<main><article class="wrap">
+  <header class="proj-head side">
+  <div class="proj-text">
+    <p class="crumb"><a href="../product.html">← ผลิตภัณฑ์และต้นแบบ</a></p>
+
+    <h1>โคมไฟพิกเซล Minecraft</h1>
+    <p class="lede">โคมไฟพิกเซลพิมพ์ 3D ที่แสงทอดเงาเป็นบล็อกแบบ Minecraft — ควบคุมจากโทรศัพท์ และใช้ไฟจากหัวชาร์จโทรศัพท์ธรรมดา</p>
+
+    <dl class="facts">
+      <div><dt>ปี</dt><dd>ปี 3 เทอม 2</dd></div>
+      <div><dt>ทีม / บทบาท</dt><dd>ทำคนเดียว · ริเริ่มเอง</dd></div>
+      <div><dt>เครื่องมือ</dt><dd>Tinkercad · พิมพ์ 3D · ESP32 · LED WS2812B · แอป Blynk</dd></div>
+      <div><dt>สถานะ</dt><dd><span class="status">เสร็จแล้ว</span></dd></div>
+    </dl>
+  </div>
+  <figure class="hero">
+    <img src="../../assets/minecraft-lamp/lamp-real-lit-hero.jpg" alt="The pixel lamp switched on, casting pixel-shaped shadows" width="2000" height="2000" loading="eager">
+    <figcaption>โคมไฟตอนเปิด — แสงทอดเงาพิกเซลแบบ Minecraft</figcaption>
+  </figure>
+  </header>
+
+
+  <div class="story">
+    <h2>โจทย์</h2>
+    <p>ฉันอยากได้โคมไฟที่ดูเหมือนหลุดออกมาจาก Minecraft ควบคุมจากโทรศัพท์ได้ และไม่ต้องใช้ฮาร์ดแวร์เพิ่มก็ทำงานได้</p>
+
+    <h2>สิ่งที่ฉันตัดสินใจ</h2>
+    <ul class="decisions">
+      <li><strong>ออกแบบและพิมพ์เอง</strong> ขึ้นรูปทรงใน Tinkercad และพิมพ์ด้วยเครื่องของตัวเอง</li>
+      <li><strong>จัดการไฟในโค้ด ไม่ใช่ด้วยฮาร์ดแวร์</strong> จัดการเรื่องไฟในโค้ดแทนการเพิ่มฮาร์ดแวร์ โคมไฟจึงใช้หัวชาร์จโทรศัพท์ได้</li>
+      <li><strong>เปลวไฟที่ทำตัวเหมือนเปลวไฟ</strong> ฉันกำหนดให้เอฟเฟกต์เปลวไฟไล่จาก ขาว → ส้ม → แดง โดยไม่ข้ามขั้น</li>
+    </ul>
+
+    <h2>ผลลัพธ์</h2>
+    <p>โคมไฟที่ใช้งานได้: LED WS2812B 50 ดวงบน ESP32 สี ความสว่าง และเอฟเฟกต์ตั้งได้จากแอป Blynk ซึ่งดึงสภาพอากาศของเมืองได้ด้วย</p>
+  </div>
+
+  <h2 class="label">แกลเลอรี</h2>
+  <div class="gallery">
+    <figure>
+      <img src="../../assets/minecraft-lamp/lamp-cad-tinkercad.png" alt="Lamp design modelled in Tinkercad" width="1612" height="872" loading="lazy">
+      <figcaption>แบบโคมไฟใน Tinkercad</figcaption>
+    </figure>
+    <figure>
+      <img src="../../assets/minecraft-lamp/lamp-real-lit-angle.jpg" alt="The pixel lamp switched on, seen from another angle" width="2000" height="2000" loading="lazy">
+      <figcaption>ตอนเปิดไฟ อีกมุมหนึ่ง</figcaption>
+    </figure>
+  </div>
+
+  <h2 class="label">ส่วนของฉัน vs AI</h2>
+  <div class="role-ai">
+    <p>ฉัน: ออกแบบ พิมพ์ ประกอบ และกำหนดว่าแสงต้องทำงานอย่างไร AI: โค้ด เขียนตามสเปกของฉัน</p>
+  </div>
+
+  <nav class="pager" aria-label="Project navigation">
+    <a href="../product.html">← ผลงานผลิตภัณฑ์และต้นแบบทั้งหมด</a>
+    <a href="svgtostl.html">ถัดไป: svgtostl →</a>
+  </nav>
+</article></main>
+
+<footer class="site-foot"><div class="wrap">
+  <a href="mailto:nattanitchafarm@gmail.com">nattanitchafarm@gmail.com</a> · <a href="../about.html">เกี่ยวกับฉัน</a>
+</div></footer>
+<script src="../../lightbox.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mini Display To-Do List — Nattanitcha Promboon</title>
+<meta name="description" content="Mini Display To-Do List: a concept for a small desk device that shows only your next task, with a Done button, a progress button and a deadline light.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../print.css" media="print">
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+  <a class="brand" href="../index.html">Nattanitcha Promboon</a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="../product.html">Product &amp; Prototyping</a>
+    <a href="../character.html">Character × Tech</a>
+    <a href="../about.html">About</a>
+    <details class="lang-menu"><summary><span class="vh">Language: </span>English</summary><ul><li><a href="#" aria-current="true" lang="en">English</a></li><li><a href="../th/work/mini-display-todo.html" lang="th" hreflang="th">ไทย</a></li></ul></details><!--/lang-->
+  </nav>
+</div></header>
+
+<main><article class="wrap">
+  <header class="proj-head">
+  <div class="proj-text">
+    <p class="crumb"><a href="../product.html">← Product &amp; Prototyping</a></p>
+
+    <h1>Mini Display To-Do List</h1>
+    <p class="lede">A concept for a small desk device that shows only the task you should do next — so you don’t have to pick up your phone to check your list.</p>
+
+    <dl class="facts">
+      <div><dt>Year</dt><dd>Year 3, Term 1</dd></div>
+      <div><dt>Team / role</dt><dd>Course mini-project, team of 3 — I did the concept design, diagrams, prototype images and choice of components</dd></div>
+      <div><dt>Tools</dt><dd>ESP32 · OLED · LED · Firebase Realtime Database · web app</dd></div>
+      <div><dt>Status</dt><dd><span class="status">concept</span></dd></div>
+    </dl>
+  </div>
+  <figure class="hero paper">
+    <img src="../assets/mini-display-todo/todo-colour-variants.webp" alt="Concept render of the device in four colours: screen, round red button and purple triangle button" width="588" height="196" loading="eager" style="width:auto;max-width:100%;margin:0 auto">
+    <figcaption>Concept render in four colours: the screen, the round Done button and the triangle Progress button.</figcaption>
+  </figure>
+  </header>
+
+  <div class="story">
+    <h2>Problem</h2>
+    <p>Working at a computer, you pick up your phone to check what’s next on your to-do list — and end up scrolling feeds or reading other notifications. IoT notice displays available today mostly just show information one way; you can’t update anything from them.</p>
+
+    <h2>The idea</h2>
+    <ul class="decisions">
+      <li><strong>Focus on one task.</strong> The OLED screen shows only the first task to do.</li>
+      <li><strong>Two-way.</strong> Press the round Done button and the task is marked done in the cloud and the next one appears; the triangle Progress button shows how much of today’s list is done, as a percentage.</li>
+      <li><strong>A light, not a phone.</strong> An LED stays on once a task is past its deadline.</li>
+      <li><strong>Inviting to use, nice on a desk.</strong> The shape is inspired by retro handheld game consoles.</li>
+      <li><strong>How it connects.</strong> Tasks are created and edited in a web app, stored in Firebase Realtime Database, and pulled over Wi-Fi by an ESP32; deadlines are checked against internet time (NTP).</li>
+    </ul>
+
+    <h2>Result</h2>
+    <p>A concept, presented in the course. Planned next steps were battery power and links to apps such as Google Tasks or Trello.</p>
+  </div>
+
+  <h2 class="label">My role</h2>
+  <div class="role-ai">
+    <p>Me: the concept design, the diagrams, the prototype images and choosing the components. Teammates: the report and research.</p>
+  </div>
+
+  <nav class="pager" aria-label="Project navigation">
+    <a href="../product.html">← All Product &amp; Prototyping work</a>
+    <a href="oc-chat.html">Next: OC Chat →</a>
+  </nav>
+</article></main>
+
+<footer class="site-foot"><div class="wrap">
+  <a href="mailto:nattanitchafarm@gmail.com">nattanitchafarm@gmail.com</a> · <a href="../about.html">About</a>
+</div></footer>
+<script src="../lightbox.js" defer></script>
+</body>
+</html>

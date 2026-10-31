@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Magnetic Universe — ณัฏฐณิชา พรหมบุญ</title>
+<meta name="description" content="Magnetic Universe: แผงผนัง LED แม่เหล็กขนาด 40 × 40 ซม. ที่แม่เหล็กแต่ละก้อนได้วงแสงลอยของตัวเอง">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="../../style.css">
+<link rel="stylesheet" href="../../print.css" media="print">
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+  <a class="brand" href="../index.html">ณัฏฐณิชา พรหมบุญ</a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="../product.html">ผลิตภัณฑ์และต้นแบบ</a>
+    <a href="../character.html">ตัวละคร × เทคโนโลยี</a>
+    <a href="../about.html">เกี่ยวกับฉัน</a>
+    <details class="lang-menu"><summary><span class="vh">ภาษา: </span>ไทย</summary><ul><li><a href="../../work/magnetic-universe.html" lang="en" hreflang="en">English</a></li><li><a href="#" aria-current="true" lang="th">ไทย</a></li></ul></details><!--/lang-->
+  </nav>
+</div></header>
+
+<main><article class="wrap">
+  <header class="proj-head side">
+  <div class="proj-text">
+    <p class="crumb"><a href="../product.html">← ผลิตภัณฑ์และต้นแบบ</a></p>
+
+    <h1>Magnetic Universe</h1>
+    <p class="lede">ผนังแสงขนาด 40 × 40 ซม. ที่แม่เหล็กทุกก้อนที่วางลงไปจะได้วงแสงของตัวเองที่ลอยอยู่ระหว่างเซนเซอร์ — และวงแสงสองวงจะผสานกันเหมือนจักรวาลเล็ก ๆ</p>
+
+    <dl class="facts">
+      <div><dt>ปี</dt><dd>ม.ค. – พ.ค. 2026</dd></div>
+      <div><dt>ทีม / บทบาท</dt><dd>หัวหน้าทีม</dd></div>
+      <div><dt>เครื่องมือ</dt><dd>เซนเซอร์ Hall 16 ตัว · แถบ LED แบบ addressable · Tinkercad · พิมพ์ 3D</dd></div>
+      <div><dt>สถานะ</dt><dd><span class="status">งานในวิชา</span></dd></div>
+    </dl>
+  </div>
+  <figure class="hero">
+    <img src="../../assets/magnetic-universe/universe-in-use.webp" alt="Magnetic Universe panel in use with rings of light around magnets" width="1600" height="1600" loading="eager">
+    <figcaption>แผงที่เสร็จแล้วขณะใช้งาน</figcaption>
+  </figure>
+  </header>
+
+
+  <div class="story">
+    <h2>โจทย์</h2>
+    <p>แผนแรกใช้เซนเซอร์ Hall แผงละ 25 ตัว 3 แผง — ต้องบัดกรี 75 ตัว และถ้าใช้เซนเซอร์น้อยกว่านั้นจะจับได้เป็นหย่อม ๆ แสงยังต้องดูเป็นวงนุ่ม ๆ ไม่ใช่จุด LED บนกรอบที่หนักอยู่แล้วและต้องตั้งเอียง</p>
+
+    <h2>สิ่งที่ฉันตัดสินใจ</h2>
+    <ul class="decisions">
+      <li><strong>ฮาร์ดแวร์น้อยลง คณิตศาสตร์มากขึ้น</strong> เซนเซอร์ Hall 16 ตัว (4 × 4) บนแผง 400 × 400 มม. อ่านเฉพาะ 4 ตัวรอบแม่เหล็ก แล้วคำนวณตำแหน่งจากระยะ แม่เหล็กจึงไม่ต้องวางตรงเซนเซอร์ วิธีนี้แก้ได้ทั้งเรื่องการแมปพิกัดและภาระการบัดกรี</li>
+      <li><strong>ใช้ตัวข้างเคียง ไม่ใช่ค่าเฉลี่ย</strong> ฉันค้านการเฉลี่ยเซนเซอร์ทั้ง 16 ตัว และให้คำนวณตำแหน่งจากกลุ่มข้างเคียงเท่านั้น</li>
+      <li><strong>หนึ่งวงต่อหนึ่งแม่เหล็ก</strong> แม่เหล็กแต่ละก้อนได้วงแสงหนึ่งวงที่ “ลอย” อยู่ระหว่างเซนเซอร์ตามความแรงของสนาม; นำแม่เหล็กสองก้อนเข้าใกล้กัน วงแสงจะผสานเป็นภาพเดียว</li>
+      <li><strong>ใส่ใยกันความร้อน ไม่ใช่ทำกรอบหนาขึ้น</strong> วิธีที่มีคนเสนอ (กล่องพิมพ์สีขาว อะคริลิกดำ เว้นระยะ) ยังเห็นเป็นจุด เพราะอะคริลิกอยู่ใกล้ LED ฉันจึงอัดใยทนความร้อนในชั้นเซนเซอร์: ไม่ช็อตที่จุดบัดกรี ไม่รบกวนเซนเซอร์ Hall ไม่เพิ่มน้ำหนัก — และแสงกระจายสม่ำเสมอ</li>
+      <li><strong>คงกรอบ 6 ซม.</strong> ฉันเคยคิดถึง 8 ซม. แต่แผงหนัก 3–4 กก. อยู่แล้ว และติดตั้งเอียง 60°</li>
+      <li><strong>พิมพ์ตัวยึดเอง</strong> แท่งเกลียวกับฝาหมุน (ปุ่มกลมบนกรอบคือน็อตที่พิมพ์เอง) และกรอบที่ประกอบเป็นชั้น ฉันจับได้ว่าเกลียวบางเกินจนสไลเซอร์พิมพ์ไม่ได้</li>
+    </ul>
+
+    <h2>ผลลัพธ์</h2>
+    <p>สร้างแผงเสร็จและทำงานได้ตามภาพด้านล่าง: วางแม่เหล็กบนหน้าแผงแล้วเกิดวงแสง และแม่เหล็กสองก้อนผสานกันได้ ก่อนลงมือทำทั้งกริด ฉันทดสอบกับเซนเซอร์ 4 ตัวก่อนว่ายังจับแม่เหล็กได้ผ่านชั้นกระจายแสง</p>
+  </div>
+
+  <h2 class="label">แกลเลอรี</h2>
+  <div class="gallery">
+    <figure>
+      <img src="../../assets/magnetic-universe/universe-top-view.webp" alt="Top-down view of the finished panel with soft light rings" width="1600" height="1600" loading="lazy">
+      <figcaption>มุมบนหลังใส่ใย — เป็นวง ไม่ใช่จุด</figcaption>
+    </figure>
+    <figure>
+      <img src="../../assets/magnetic-universe/led-before-diffuser.webp" alt="LED strip showing separate bright dots before diffusion" width="720" height="1600" loading="lazy">
+      <figcaption>ก่อน: LED เห็นเป็นจุดแยกกัน</figcaption>
+    </figure>
+    <figure>
+      <img src="../../assets/magnetic-universe/universe-exhibit.webp" alt="Magnetic Universe on display with light reflecting on the surface" width="1600" height="1600" loading="lazy">
+      <figcaption>ตอนจัดแสดง มีแสงสะท้อน</figcaption>
+    </figure>
+    <figure>
+      <img src="../../assets/magnetic-universe/acrylic-frame.webp" alt="Building the frame with the acrylic sheet" width="720" height="1600" loading="lazy">
+      <figcaption>ประกอบกรอบและอะคริลิก</figcaption>
+    </figure>
+    <figure>
+      <img src="../../assets/magnetic-universe/hall-sensor-test.webp" alt="Wiring and Hall sensor test with a magnet" width="1600" height="720" loading="lazy">
+      <figcaption>เดินสายและทดสอบเซนเซอร์ Hall กับแม่เหล็ก</figcaption>
+    </figure>
+    <figure>
+      <img src="../../assets/magnetic-universe/magnetic-cad.webp" alt="Exploded Tinkercad view of the layered frame" width="1600" height="730" loading="lazy">
+      <figcaption>ภาพแยกชิ้นใน Tinkercad — กรอบประกอบเป็นชั้น</figcaption>
+    </figure>
+    <figure>
+      <img src="../../assets/magnetic-universe/magnetic-wand-tinkercad.webp" alt="Magnet pen modelled in Tinkercad: purple threaded handle, knurled twist-on cap with a loop, and a ring" width="1600" height="807" loading="lazy">
+      <figcaption>ปากกาแม่เหล็กที่ฉันออกแบบใน Tinkercad: ด้ามมีเกลียว ฝาหมุนปิดพร้อมห่วง และแหวน</figcaption>
+    </figure>
+  </div>
+
+  <h2 class="label">ส่วนของฉัน vs AI</h2>
+  <div class="role-ai">
+    <p>ฉัน: คอนเซปต์และออกแบบอุปกรณ์ ตรรกะการตรวจจับ ขึ้นโมเดลและพิมพ์ด้วยเครื่องพิมพ์ 3D ของตัวเอง ประกอบและบัดกรี AI: เขียนโค้ดคำนวณตำแหน่งจากไอเดียของฉัน เพื่อนในทีม: เอกสารและการนำเสนอ</p>
+  </div>
+
+  <nav class="pager" aria-label="Project navigation">
+    <a href="../product.html">← ผลงานผลิตภัณฑ์และต้นแบบทั้งหมด</a>
+    <a href="deepcore-deepsphere.html">ถัดไป: DeepCore → DeepSphere →</a>
+  </nav>
+</article></main>
+
+<footer class="site-foot"><div class="wrap">
+  <a href="mailto:nattanitchafarm@gmail.com">nattanitchafarm@gmail.com</a> · <a href="../about.html">เกี่ยวกับฉัน</a>
+</div></footer>
+<script src="../../lightbox.js" defer></script>
+</body>
+</html>

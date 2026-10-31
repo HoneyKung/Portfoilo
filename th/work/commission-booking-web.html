@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Commission Booking Web — ณัฏฐณิชา พรหมบุญ</title>
+<meta name="description" content="Commission Booking Web: เว็บจองงานสองฝั่งสำหรับนักวาดและลูกค้า ออกแบบใน Figma เป็นงานในวิชา">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="../../style.css">
+<link rel="stylesheet" href="../../print.css" media="print">
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+  <a class="brand" href="../index.html">ณัฏฐณิชา พรหมบุญ</a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="../product.html">ผลิตภัณฑ์และต้นแบบ</a>
+    <a href="../character.html">ตัวละคร × เทคโนโลยี</a>
+    <a href="../about.html">เกี่ยวกับฉัน</a>
+    <details class="lang-menu"><summary><span class="vh">ภาษา: </span>ไทย</summary><ul><li><a href="../../work/commission-booking-web.html" lang="en" hreflang="en">English</a></li><li><a href="#" aria-current="true" lang="th">ไทย</a></li></ul></details><!--/lang-->
+  </nav>
+</div></header>
+
+<main><article class="wrap">
+  <header class="proj-head">
+  <div class="proj-text">
+    <p class="crumb"><a href="../product.html">← ผลิตภัณฑ์และต้นแบบ</a></p>
+
+    <h1>Commission Booking Web</h1>
+    <p class="lede">เว็บจองงานสองฝั่ง ที่นักวาดลงแพ็กเกจของตัวเองและลูกค้าสั่งงาน — พางานคอมมิชชันไปตั้งแต่สั่งจนถึงยืนยันรับงาน</p>
+
+    <dl class="facts">
+      <div><dt>ปี</dt><dd>ปลายปี 2025</dd></div>
+      <div><dt>ทีม / บทบาท</dt><dd>งานกลุ่มในวิชา — ฉันทำงานส่วนใหญ่: ออกแบบทั้งหมดใน Figma (คนเดียว) และเขียนโค้ดบางส่วน</dd></div>
+      <div><dt>เครื่องมือ</dt><dd>Figma · Node.js / Express · MySQL</dd></div>
+      <div><dt>สถานะ</dt><dd><span class="status">งานในวิชา</span></dd></div>
+    </dl>
+  </div>
+  <figure class="hero">
+    <img src="../../assets/commission-booking-web/figma-overview.webp" alt="Overview of all Commission Booking Web screens designed in Figma" width="1600" height="851" loading="eager">
+    <figcaption>หน้าจอทั้งหมด ออกแบบโดยฉันใน Figma</figcaption>
+  </figure>
+  </header>
+
+
+  <div class="story">
+    <h2>โจทย์</h2>
+    <p>งานคอมมิชชันผ่านหลายขั้นตอนระหว่างนักวาดกับลูกค้า — ลงงาน สั่งงาน ตั้งราคา จ่ายเงิน ส่งงาน และยืนยัน โปรเจกต์นี้คือเว็บเดียวที่พาทั้งสองฝั่งไปครบทั้งกระบวนการ</p>
+
+    <h2>สิ่งที่ฉันตัดสินใจ</h2>
+    <ul class="decisions">
+      <li><strong>ออกแบบก่อน คนเดียว</strong> ฉันออกแบบทุกหน้าจอเองใน Figma ก่อนเริ่มสร้าง</li>
+      <li><strong>สองบทบาทในเว็บเดียว</strong> นักวาดลงแพ็กเกจและผลงาน; ลูกค้าเลือกดูและสั่งงาน</li>
+      <li><strong>ตั้งราคาหลังสั่งงาน</strong> ลำดับคือ สั่งงาน → นักวาดตั้งราคา → จ่ายเงิน → ส่งงาน → ลูกค้ายืนยัน</li>
+      <li><strong>ให้นักวาดประเมินและเสนอราคาเอง</strong> งานวาดไม่เหมือนสินค้าอื่น: ราคาต้องตกลงและประเมินเป็นงาน ๆ ไป ลูกค้าบางคนมีตัวละครที่รายละเอียดเยอะ บางคนสั่งแค่ตัวละคร บางคนอยากได้ฉากหลังด้วย — นักวาดจึงตั้งราคาหลังเห็นงานที่สั่ง</li>
+    </ul>
+
+    <h2>ผลลัพธ์</h2>
+    <p>สร้างเป็นงานในวิชาช่วงปลายปี 2025 ด้วย Node.js / Express และฐานข้อมูล MySQL ตามลำดับงานข้างบน</p>
+  </div>
+
+  <h2 class="label">แกลเลอรี</h2>
+  <div class="noimg-block">จะเพิ่มหน้าจออื่นภายหลัง</div>
+
+  <h2 class="label">ส่วนของฉัน vs AI</h2>
+  <div class="role-ai">
+    <p>ฉัน: ออกแบบทั้งหมดใน Figma คนเดียว; เขียนโค้ดบางส่วนเอง AI: ช่วยเขียนโค้ดส่วนที่เหลือ</p>
+  </div>
+
+  <nav class="pager" aria-label="Project navigation">
+    <a href="../product.html">← ผลงานผลิตภัณฑ์และต้นแบบทั้งหมด</a>
+    <a href="minecraft-lamp.html">ถัดไป: โคมไฟพิกเซล Minecraft →</a>
+  </nav>
+</article></main>
+
+<footer class="site-foot"><div class="wrap">
+  <a href="mailto:nattanitchafarm@gmail.com">nattanitchafarm@gmail.com</a> · <a href="../about.html">เกี่ยวกับฉัน</a>
+</div></footer>
+<script src="../../lightbox.js" defer></script>
+</body>
+</html>

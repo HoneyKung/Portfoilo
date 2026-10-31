@@ -71,3 +71,11 @@ figcaption { font-size: 7.5pt; margin-top: 1mm; }
 
 /* about */
 .about-grid { grid-template-columns: 1fr 1fr; gap: 0 10mm; }
+
+/* lightbox and language switch are screen-only */
+.lb, .lang-switch, .lang-menu { display: none !important; }
+
+/* video: print only the link */
+.video-embed { display: none !important; }
+
+.gallery.versions { grid-template-columns: repeat(4, 1fr); gap: 0 4mm; }
