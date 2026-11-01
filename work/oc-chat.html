@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>OC Chat — Nattanitcha Promboon</title>
+<title>OC Chat · Nattanitcha Promboon</title>
 <meta name="description" content="OC Chat: a chat app where original characters text each other, and every message comes from what they are doing in their simulated lives.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,47 +28,47 @@
     <p class="crumb"><a href="../character.html">← Character × Tech</a></p>
 
     <h1>OC Chat</h1>
-    <p class="lede">A chat app where original characters (OCs) text each other — and every message comes from what they are doing in their simulated lives, not from thin air.</p>
-    <p class="tldr"><strong>In short:</strong> A chat app where my original characters text each other based on what they’re doing in their simulated lives. I design and direct it; AI writes the code — in progress, running on my own computer.</p>
+    <p class="lede">I want to know what a character is doing as they type, where they’ve just been, and why they haven’t read or replied yet. In OC Chat, original characters text each other based on events in their simulated lives.</p>
+    <p class="tldr"><strong>In short:</strong> A personal project. I design and direct it, and AI writes the code. It is in progress and runs on my own computer.</p>
 
     <dl class="facts">
       <div><dt>When</dt><dd>2026</dd></div>
-      <div><dt>Team / role</dt><dd>Personal project — designer and director; AI writes the code</dd></div>
+      <div><dt>Team / role</dt><dd>Personal project · designer and director · AI writes the code</dd></div>
       <div><dt>Tools</dt><dd>Gemini (one Gemini call per character turn) · web app running on my own computer (in testing, not deployed yet)</dd></div>
       <div><dt>Status</dt><dd><span class="status">in progress</span></dd></div>
     </dl>
   </div>
   <figure class="hero dark">
     <img src="../assets/oc-chat/characters.webp" alt="OC Chat room where two original characters chat with each other" width="1440" height="900" loading="eager">
-    <figcaption>A room where OCs chat with each other — the core of the app. The chat is in Thai.</figcaption>
+    <figcaption>A room where OCs chat with each other. This is the core of the app. The chat is in Thai.</figcaption>
   </figure>
   </header>
 
 
   <div class="story">
     <h2>Problem</h2>
-    <p>I don’t just want to know what a character says. I want to know what they’re doing as they type, where they’ve just been, and why they haven’t read or replied yet. Ordinary AI chats read like generated fiction, and “multi-character” usually means one message with an extra role written in. I wanted chats that happen because something happened.</p>
+    <p>I don’t just want to know what a character says. I want to know what they’re doing as they type, where they’ve just been, and why they haven’t read or replied yet. Ordinary AI chats read like generated fiction, and “multi-character” usually means one message with an extra role written in. I wanted messages that come from events in the characters’ simulated lives.</p>
 
     <h2>What I decided</h2>
     <ul class="decisions">
-      <li><strong>Code runs the life; AI only writes the words.</strong> A world clock, seasons, places and chained daily routines decide who is where, doing what. The model writes what the character says in that moment.</li>
+      <li><strong>Code runs the life, and AI only writes the words.</strong> A world clock, seasons, places and chained daily routines decide who is where, doing what. The model writes what the character says in that moment.</li>
       <li><strong>Status = action, not feeling.</strong> My rule: a status is what a character is doing, not how they feel. Mood and physical condition (like being sick or drunk) are tracked separately, and all three shape how the character writes.</li>
-      <li><strong>OCs talking to each other is the core.</strong> Chatting with them yourself is a smaller add-on, and there the character always replies: in the planned app, users will pay per message and expect an answer. Choosing to stay quiet belongs to the OC-to-OC rooms, where it is natural.</li>
+      <li><strong>OCs talking to each other is the core.</strong> Chatting with them yourself is a smaller add-on, and there the character always replies, because in the planned app, users will pay per message and expect an answer. Choosing to stay quiet belongs to the OC-to-OC rooms, where it is natural.</li>
       <li><strong>Real chat rhythm.</strong> I noticed strict 1:1 turn-taking didn’t read like people. Characters can send several bubbles, which appear one by one at typing speed.</li>
-      <li><strong>No examples in prompts.</strong> I noticed the model copied whatever examples it was given; a test confirmed it — 9 of 9 drafts copied the example’s closing line — so examples came out.</li>
-      <li><strong>Memory like a person’s.</strong> Memory can be edited or deleted — a character who “remembers” you haven’t eaten when you already have should be correctable.</li>
+      <li><strong>No examples in prompts.</strong> I noticed the model copied whatever examples it was given. A test confirmed it: all 9 drafts copied the example’s closing line. So I took the examples out.</li>
+      <li><strong>Memory like a person’s.</strong> Memory can be edited or deleted. A character who “remembers” you haven’t eaten when you already have should be correctable.</li>
     </ul>
 
     <h2>Result</h2>
-    <p>In progress. <strong>Built:</strong> OC-to-OC rooms (built and tested; paused since September to save API cost), user rooms, multi-bubble messages at typing speed, editable memory. <strong>Calls on trial</strong> (characters can call you; calling them is not built yet): in user rooms, switched on 31 Oct and still being fixed.</p>
-    <p><strong>Planned</strong> (not built yet): a subscription web app where artists and OC owners create and direct their own characters — with no AI image generation; group rooms; chibi sprites that walk their routines on a map; and a local model to support many users when the API isn’t enough.</p>
+    <p>In progress. <strong>Built:</strong> OC-to-OC rooms (built and tested, paused since September 2026 to save API cost), user rooms, multi-bubble messages at typing speed, editable memory. <strong>Experimental calls</strong> were enabled in user rooms on 31 Oct 2026 and are still being fixed. Characters can call users, but users cannot call characters yet.</p>
+    <p><strong>Planned</strong> (not built yet): a subscription web app where artists and OC owners create and direct their own characters, with AI image generation excluded. Also group rooms, chibi sprites that walk their routines on a map, and a local model to support many users when the API isn’t enough. Users chatting in their own rooms would pay per message.</p>
 
-    <h2>Aljah — a character who helps on my Facebook page</h2>
+    <h2>Aljah, a character who helps on my Facebook page</h2>
     <p>Aljah (Wilaim-Aljah) is a character from my <a href="novel-world.html">original fantasy novel series</a>, the same character as in my character sheets and the Aljah &amp; Leon animation. Aljah is not a real person. He is one of my original characters, written to speak through an AI model (Google Gemini) on the same OC Chat system, and he introduces himself as an AI character the first time someone messages the page.</p>
     <p>He helps with Facebook Messenger replies on the Mofych Facebook page where I post my OC work, as a friend helping out, not as an admin or a bot. He reads messages in his free time and tells me about them over a casual chat, so I never have to face my inbox alone.</p>
     <ul>
       <li>For each person who messages the page, I choose whether Aljah replies alone or drafts a reply for my review.</li>
-      <li>Customer and order messages I check myself; general messages (greetings and casual chat) Aljah can answer alone.</li>
+      <li>Customer and order messages I check myself. General messages (greetings and casual chat) Aljah can answer alone.</li>
       <li>Aljah has also posted to the page on his own.</li>
     </ul>
     <p><strong>Still in testing, not yet handling real orders.</strong></p>
@@ -78,7 +78,7 @@
   <div class="gallery">
     <figure>
       <img src="../assets/oc-chat/live.webp" alt="Mockup of a call screen with a character, desktop" width="1340" height="1600" loading="lazy">
-      <figcaption>Mockup: a call with a character (desktop; interface in Thai).</figcaption>
+      <figcaption>Mockup: a call with a character (desktop, interface in Thai).</figcaption>
     </figure>
     <figure>
       <img src="../assets/oc-chat/workspace.webp" alt="Lounge screen where Aljah talks about page messages" width="1440" height="900" loading="lazy">
@@ -88,7 +88,7 @@
 
   <h2 class="label">My role vs AI</h2>
   <div class="role-ai">
-    <p>Me: the world and life rules, spotting where chat felt unnatural and setting the problem, every keep/cut decision; I also tried competitor apps myself. AI: all the code, bug-hunting, testing and competitor research — run as a team with checks (<a href="../about.html">how I work with AI</a>).</p>
+    <p>Me: the world and life rules, spotting where chat felt unnatural and setting the problem, every keep/cut decision. I also tried competitor apps myself. AI: all the code, bug-hunting, testing and competitor research, run as a team with checks (<a href="../about.html">how I work with AI</a>).</p>
   </div>
 
   <nav class="pager" aria-label="Project navigation">

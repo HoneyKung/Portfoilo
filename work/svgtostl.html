@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>svgtostl — Nattanitcha Promboon</title>
-<meta name="description" content="svgtostl: a tool that turns filled-black drawings into printable 3D parts with sharp corners and true curves.">
+<title>svgtostl · Nattanitcha Promboon</title>
+<meta name="description" content="svgtostl: a tool that turns solid black drawings into printable 3D parts with sharp corners and true curves.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
@@ -27,9 +27,9 @@
   <div class="proj-text">
     <p class="crumb"><a href="../product.html">← Product &amp; Prototyping</a></p>
 
-    <h1>svgtostl — drawing-to-3D-print tool</h1>
-    <p class="lede">A tool that turns my filled-black drawings into printable 3D parts with sharp corners and curves true to the drawing — so I can print exactly what I drew: keychains, and 3D-printed sewing-pattern templates — I lay the printed piece on fabric, trace its edge and cut.</p>
-    <p class="tldr"><strong>In short:</strong> A tool that turns my filled-black drawings into 3D-printable parts. I set the method and the quality standard; AI wrote the code — in use for keychains, a restaurant logo print and sewing-pattern templates.</p>
+    <h1>svgtostl, a drawing-to-3D-print tool</h1>
+    <p class="lede">I wanted small prints that keep the sharp corners and curves of my drawings. I use svgtostl to turn my solid black drawings into printable 3D parts for keychains and sewing templates. I place the printed template on fabric, trace its edge and cut.</p>
+    <p class="tldr"><strong>In short:</strong> I set the method and the quality standard, and AI wrote the code. It is in use for keychains, a restaurant logo print and sewing-pattern templates.</p>
 
     <dl class="facts">
       <div><dt>When</dt><dd>2026</dd></div>
@@ -40,7 +40,7 @@
   </div>
   <figure class="hero">
     <img src="../assets/svgtostl/keychain-finished-hero.jpg" alt="Finished 3D-printed and painted character keychain with charms" width="2000" height="2000" loading="eager">
-    <figcaption>A finished keychain — drawn, printed and painted by me. It is built to hold a bearing (inside, not visible) so the character can swing.</figcaption>
+    <figcaption>A finished keychain, drawn, printed and painted by me. It is built to hold a bearing (inside, not visible) so the character can swing.</figcaption>
   </figure>
   </header>
 
@@ -51,14 +51,14 @@
 
     <h2>What I decided</h2>
     <ul class="decisions">
-      <li><strong>The standard: true to the drawing.</strong> Sharp corners and curves that match what I drew. I judge quality by smooth curves, sharp tips and no wobble — not by file size.</li>
-      <li><strong>No point reduction.</strong> I cut the Douglas-Peucker simplify step (it reduces a curve to fewer points): on a ring of 90 mm radius it made straight segments 4–6 mm long, turning curves into visible facets for 0.2 mm-nozzle printing. If triangles must be reduced, resample along the curve length instead.</li>
-      <li><strong>Tune against the print.</strong> I kept the settings that printed well, then measured the output on the logo: a lower blur setting gives sharper tips (about 0.17–0.23 mm sharper), while staying within what a 0.2 mm nozzle can print — any extra wobble on curves is smaller than the nozzle can reproduce.</li>
-      <li><strong>Split, then stack.</strong> Drawings are converted part by part and the pieces stack together; keychains are designed to hold a bearing so the character swings.</li>
+      <li><strong>The standard: true to the drawing.</strong> Sharp corners and curves have to match what I drew. I judge quality by smooth curves, sharp tips and no wobble, not by file size.</li>
+      <li><strong>No point reduction.</strong> I cut the Douglas-Peucker simplify step (it reduces a curve to fewer points). On a ring of 90 mm radius it made straight segments 4–6 mm long, turning curves into visible facets for 0.2 mm-nozzle printing. If triangles must be reduced, resample along the curve length instead.</li>
+      <li><strong>Tune against the print.</strong> I kept the settings that printed well, then measured the geometry in the output file for the logo. A lower blur setting gives sharper tips (about 0.17–0.23 mm sharper) and still stays within what a 0.2 mm nozzle can print. Any extra wobble on curves is smaller than the nozzle can reproduce.</li>
+      <li><strong>Split, then stack.</strong> Drawings are converted part by part and the pieces stack together. Keychains are designed to hold a bearing so the character swings.</li>
     </ul>
 
     <h2>Result</h2>
-    <p>Used for my own keychains, for a 22-piece restaurant logo print (not shown), and for 3D-printing sewing-pattern templates: I lay the printed piece on fabric, trace its edge and cut. Limits I logged myself: the STL is not yet watertight — not a fully closed surface (the slicer repairs it), and large images use around 3 GB of RAM.</p>
+    <p>Used for my own keychains, for a 22-piece restaurant logo print, and for 3D-printing sewing-pattern templates that I lay on fabric, trace around and cut. Limits I logged myself: the STL is not yet watertight, meaning not a fully closed surface (the slicer repairs it), and large images use around 3 GB of RAM.</p>
   </div>
 
   <h2 class="label">Gallery</h2>
@@ -77,7 +77,7 @@
     </figure>
     <figure>
       <img src="../assets/svgtostl/svgtostl-parts-on-print-plates.webp" alt="Creality Print screenshot with keychain parts laid out on print plates" width="1368" height="950" loading="lazy">
-      <figcaption>Keychain parts from svgtostl laid out on print plates in Creality Print (0.2 mm nozzle) — the pieces that went to print.</figcaption>
+      <figcaption>Keychain parts from svgtostl laid out on print plates in Creality Print (0.2 mm nozzle). These are the pieces that went to print.</figcaption>
     </figure>
     <figure>
       <img src="../assets/svgtostl/keychain-drawing-from-character.webp" alt="Drawing app canvas with a keychain line drawing and the character reference beside it" width="1600" height="1000" loading="lazy">
@@ -107,7 +107,7 @@
 
   <h2 class="label">My role vs AI</h2>
   <div class="role-ai">
-    <p>Me: the method, the quality standard and every keep/cut decision; drawing, printing and painting the keychains. AI: wrote the tool’s code to my spec.</p>
+    <p>Me: the method, the quality standard and every keep/cut decision, plus drawing, printing and painting the keychains. AI: wrote the tool’s code to my spec.</p>
   </div>
 
   <nav class="pager" aria-label="Project navigation">

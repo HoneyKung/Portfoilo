@@ -181,7 +181,6 @@ p { margin: 0 0 14px; }
 .card .cover.sprites { display: flex; background: radial-gradient(circle at 50% 60%, #f3e6cf, #e2cfae); }
 .sprites img { width: auto; height: 62%; max-height: 220px; object-fit: contain; }
 .card .cover.sprites img { width: auto; height: 70%; padding: 0; }
-.card:hover .cover.sprites img { transform: none; }
 
 /* METO render sits on light grey — match it */
 .card .cover.meto-bg, .hero.meto-bg img { background: #a1a1a1; }

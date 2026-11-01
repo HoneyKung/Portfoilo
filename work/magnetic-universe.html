@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Magnetic Universe — Nattanitcha Promboon</title>
+<title>Magnetic Universe · Nattanitcha Promboon</title>
 <meta name="description" content="Magnetic Universe: a 40 × 40 cm magnetic LED wall panel for a light exhibition: light gathers under each magnet you place (up to two), and two pools of light blend into one.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,34 +28,34 @@
     <p class="crumb"><a href="../product.html">← Product &amp; Prototyping</a></p>
 
     <h1>Magnetic Universe</h1>
-    <p class="lede">A 40 × 40 cm magnetic LED wall panel for a light exhibition, played with magnet pens (the magnets sit inside the pens): light gathers under each magnet you place (up to two), and two pools of light blend into one, like a small universe. It’s an immersive light piece.</p>
-    <p class="tldr"><strong>In short:</strong> A 40 × 40 cm magnetic LED wall panel for a light exhibition: light gathers under each magnet you place (up to two), and two pools of light blend into one nebula-like glow. I led the team, came up with the sensing idea, and modelled, printed, wired and soldered it; AI wrote the code to my spec — course project, done.</p>
+    <p class="lede">Place a magnet pen on the panel and light gathers beneath it. Bring two magnets close and their pools of light merge, like a small universe. Magnetic Universe is a 40 × 40 cm LED wall panel for a light exhibition, using up to two magnets.</p>
+    <p class="tldr"><strong>In short:</strong> A finished course project. I led the team, came up with the sensing idea, and modelled, printed, wired and soldered it. AI wrote the code to my spec.</p>
 
     <dl class="facts">
       <div><dt>When</dt><dd>Jan – May 2026</dd></div>
-      <div><dt>Team / role</dt><dd>Team lead</dd></div>
+      <div><dt>Team / role</dt><dd>Team lead, team of 4</dd></div>
       <div><dt>Tools</dt><dd>16 Hall sensors (magnetic-field sensors) · addressable LED strip · Tinkercad · 3D printing</dd></div>
       <div><dt>Status</dt><dd><span class="status">done</span> course project</dd></div>
     </dl>
   </div>
   <figure class="hero">
     <img src="../assets/magnetic-universe/magnetic-two-pens-top.webp" alt="Two magnet pens on the finished panel, seen from above, with a soft purple glow under each pen" width="1600" height="1600" loading="eager">
-    <figcaption>Two magnet pens on the panel; the light gathers as a soft glow under each pen.</figcaption>
+    <figcaption>Two magnet pens on the panel. The light gathers as a soft glow under each pen.</figcaption>
   </figure>
   </header>
 
 
   <div class="story">
     <h2>Problem</h2>
-    <p>The first plan put 25 Hall sensors on each of three panels — 75 sensors to solder, and fewer sensors would only detect in patches. The light also had to read as a soft glow rather than LED dots, on a frame that was already heavy and had to stand tilted.</p>
+    <p>The first plan put 25 Hall sensors on each of three panels, which meant 75 sensors to solder, and fewer sensors would only detect in patches. The light also had to read as a soft glow rather than LED dots, on a frame that was already heavy and had to stand tilted.</p>
 
     <h2>What I decided</h2>
     <ul class="decisions">
-      <li><strong>Less hardware, more math.</strong> 16 Hall sensors (4 × 4) on a 400 × 400 mm panel. Find the strongest sensor and compute the magnet’s position from it and its neighbours, weighted by field strength, so the magnet doesn’t need to sit on a sensor. This solved both the coordinate mapping and the soldering load.</li>
-      <li><strong>Use the nearest sensors, not an average.</strong> I argued against averaging all 16 sensors and had the position computed from the neighbouring group only.</li>
-      <li><strong>One ring per magnet.</strong> Each magnet (up to two) gets one ring of light that “floats” between sensors with the field strength; bring two magnets close and their rings blend into one image.</li>
-      <li><strong>Fibre fill, not a thicker frame.</strong> The suggested fix (white printed box, black acrylic, spacing) still showed the LEDs as dots. I packed heat-resistant fibre fill that diffuses the light into the sensor layer: no short circuits at the solder joints, no interference with the Hall sensors, no added weight — and the light spreads evenly.</li>
-      <li><strong>Keep the 6 cm frame.</strong> I considered 8 cm, but the panel was already 3–4 kg and mounts at 60°.</li>
+      <li><strong>Less hardware, more math.</strong> Instead of soldering 75 sensors, I used 16 Hall sensors (4 × 4) on a 400 × 400 mm panel. The system finds the strongest sensor and computes the magnet’s position from it and its neighbours, weighted by field strength, so the magnet doesn’t need to sit on a sensor. This solved both the coordinate mapping and the soldering load.</li>
+      <li><strong>Calculate from neighbouring sensors only.</strong> I argued against averaging all 16 sensors and had the position computed from the neighbouring group only.</li>
+      <li><strong>One ring per magnet.</strong> Each magnet (up to two) gets one ring of light that “floats” between sensors with the field strength. Bring two magnets close and their rings blend into one image.</li>
+      <li><strong>Fibre fill, not a thicker frame.</strong> The suggested fix was a white printed box, black acrylic and spacing, and it still showed the LEDs as dots. I packed heat-resistant fibre fill that diffuses the light into the sensor layer. It causes no short circuits at the solder joints, no interference with the Hall sensors and no added weight, and the light spreads evenly.</li>
+      <li><strong>Keep the 6 cm frame.</strong> I considered 8 cm, but the panel was already 3–4 kg and mounts at 60°. I aim for something practical: compact to display, with sensible weight and size, rather than a bigger frame that fits everything without thinking about space.</li>
       <li><strong>Print my own fasteners.</strong> Threaded rods with twist-on caps (the round knobs on the frame are printed nuts), and a frame that assembles in layers. I caught threads that were too thin for the slicer to print.</li>
     </ul>
 
@@ -67,7 +67,7 @@
   <div class="gallery">
     <figure>
       <img src="../assets/magnetic-universe/magnetic-two-pens-glow.webp" alt="Two magnet pens on the panel at an angle, with an even purple glow and no visible LED dots" width="1600" height="1600" loading="lazy">
-      <figcaption>After the fibre fill: even glow, no LED dots — the light gathers under each pen.</figcaption>
+      <figcaption>After the fibre fill: an even glow with no LED dots, and the light gathers under each pen.</figcaption>
     </figure>
     <figure>
       <img src="../assets/magnetic-universe/led-before-diffuser.webp" alt="LED strip showing separate bright dots before diffusion" width="720" height="1600" loading="lazy">
@@ -75,7 +75,7 @@
     </figure>
     <figure>
       <img src="../assets/magnetic-universe/magnetic-pen-glow-angle.webp" alt="Magnetic Universe on display, a magnet pen on the panel with an even purple glow and ceiling reflections" width="1600" height="1600" loading="lazy">
-      <figcaption>On display: a magnet pen on the panel; even glow, no LED dots (the lines are reflections of the ceiling).</figcaption>
+      <figcaption>On display: a magnet pen on the panel, with an even glow and no LED dots (the lines are reflections of the ceiling).</figcaption>
     </figure>
     <figure>
       <img src="../assets/magnetic-universe/acrylic-frame.webp" alt="Building the frame with the acrylic sheet" width="720" height="1600" loading="lazy">
@@ -87,7 +87,7 @@
     </figure>
     <figure>
       <img src="../assets/magnetic-universe/magnetic-cad.webp" alt="Exploded Tinkercad view of the layered frame" width="1600" height="730" loading="lazy">
-      <figcaption>Exploded view in Tinkercad — the frame assembles in layers.</figcaption>
+      <figcaption>Exploded view in Tinkercad. The frame assembles in layers.</figcaption>
     </figure>
     <figure>
       <img src="../assets/magnetic-universe/magnetic-wand-tinkercad.webp" alt="Magnet pen modelled in Tinkercad: purple threaded handle, knurled twist-on cap with a loop, and a ring" width="1600" height="807" loading="lazy">
