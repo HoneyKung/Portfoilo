@@ -16,7 +16,7 @@
   <a class="brand" href="../index.html">ณัฏฐณิชา พรหมบุญ</a>
   <nav class="site-nav" aria-label="Main">
     <a href="../product.html">ผลิตภัณฑ์และต้นแบบ</a>
-    <a href="../character.html">ตัวละคร × เทคโนโลยี</a>
+    <a href="../character.html">ตัวละครและเทคโนโลยี</a>
     <a href="../about.html">เกี่ยวกับฉัน</a>
     <details class="lang-menu"><summary aria-label="ภาษา: ไทย">ไทย</summary><ul><li><a href="../../work/give-me-recipes.html" lang="en" hreflang="en">English</a></li><li><a href="#" aria-current="true" lang="th">ไทย</a></li></ul></details><!--/lang-->
   </nav>
@@ -25,23 +25,23 @@
 <main><article class="wrap">
   <header class="proj-head">
   <div class="proj-text">
-    <p class="crumb"><a href="../character.html">← ตัวละคร × เทคโนโลยี</a></p>
+    <p class="crumb"><a href="../character.html">← ตัวละครและเทคโนโลยี</a></p>
 
     <h1>GIVE ME Recipes</h1>
-    <p class="lede">แชตบอตสูตรอาหาร (แอปคอนโซล C#) ที่ไม่บังคับให้เลือกจากเมนู: บอตอ่านประโยคที่คุณพิมพ์ แล้วจับคำสำคัญเพื่อเข้าใจว่าคุณต้องการอะไร</p>
+    <p class="lede">แชตบอตสูตรอาหาร (แอปคอนโซล C#) ที่ไม่บังคับให้เลือกจากเมนู: บอตอ่านประโยคภาษาอังกฤษที่คุณพิมพ์ แล้วจับคำสำคัญเพื่อเข้าใจว่าคุณต้องการอะไร</p>
     <p class="tldr"><strong>สรุปสั้น ๆ:</strong> แชตบอตสูตรอาหารที่ฉันออกแบบและเขียนโค้ดเองทั้งหมดด้วย C#; เข้าใจประโยคที่พิมพ์อิสระด้วยการจับคำสำคัญ — งานในวิชา</p>
 
     <dl class="facts">
-      <div><dt>ปี</dt><dd>ปี 2 เทอม 1 (2024)</dd></div>
+      <div><dt>ช่วงเวลา</dt><dd>ปี 2 เทอม 1 (2024)</dd></div>
       <div><dt>วิชา</dt><dd>MDT211</dd></div>
-      <div><dt>ทีม / บทบาท</dt><dd>ออกแบบระบบและเขียนโค้ดทั้งหมดเอง; เพื่อนรวบรวมสูตรอาหาร</dd></div>
+      <div><dt>ทีม / บทบาท</dt><dd>หัวหน้าทีม ทีม 3 คน — ออกแบบระบบและเขียนโค้ดทั้งหมดเอง; เพื่อนในทีมรวบรวมสูตรอาหาร</dd></div>
       <div><dt>เครื่องมือ</dt><dd>C# · แอปคอนโซล .NET</dd></div>
       <div><dt>สถานะ</dt><dd><span class="status">งานในวิชา</span></dd></div>
     </dl>
   </div>
   <figure class="hero dark">
-    <img src="../../assets/give-me-recipes/give-me-recipes-real-run.webp" alt="Console session with the recipe chatbot Giv: free sentences containing 'food' and 'search' lead to a Tom Yum Goong recipe" width="1040" height="545" loading="eager">
-    <figcaption>รันบอตจริง: บอตจับคำสำคัญจากประโยคที่พิมพ์อิสระ (‘food’, ‘search’) ไม่ใช่การเลือกจากเมนู</figcaption>
+    <img src="../../assets/give-me-recipes/give-me-recipes-real-run.webp" alt="ผลจากการรันจริง ตัดให้สั้นลง (บรรทัดที่ผู้ใช้พิมพ์แสดงเป็นสี)" width="1040" height="545" loading="eager">
+    <figcaption>ผลจากการรันจริง ตัดให้สั้นลง (บรรทัดที่ผู้ใช้พิมพ์แสดงเป็นสี)</figcaption>
   </figure>
   </header>
 
@@ -51,8 +51,8 @@
 
     <h2>สิ่งที่ฉันตัดสินใจ</h2>
     <ul class="decisions">
-      <li><strong>จับคำสำคัญ ไม่ใช่เมนู</strong> ทุกคำตอบถูกอ่านเป็นข้อความอิสระแล้วตรวจหาคำสำคัญ: “food” หรือ “bakery” เลือกประเภทสูตร; “search”, “ingredient” หรือ “adapt” เลือกว่าจะทำอะไร</li>
-      <li><strong>ตัดของที่ไม่มีออก</strong> พิมพ์วัตถุดิบที่ไม่ต้องการเป็นรายการคั่นด้วยจุลภาค แล้วบอตจะคืนสูตรเวอร์ชันที่ไม่มีวัตถุดิบเหล่านั้นเลย — บางเมนูจึงเก็บไว้มากกว่าหนึ่งเวอร์ชัน</li>
+      <li><strong>จับคำสำคัญ ไม่ใช่เมนู</strong> บอตอ่านทุกคำตอบเป็นข้อความอิสระ แล้วตรวจหาคำสำคัญ: “food” หรือ “bakery” เลือกประเภทสูตร; “search”, “ingredient” หรือ “adapt” เลือกว่าจะทำอะไร</li>
+      <li><strong>ตัดของที่ไม่มีออก</strong> พิมพ์วัตถุดิบที่ไม่ต้องการเป็นรายการคั่นด้วยจุลภาค แล้วบอตจะแสดงสูตรแบบที่ไม่ใช้วัตถุดิบเหล่านั้นเลย — บางเมนูจึงเก็บไว้มากกว่าหนึ่งเวอร์ชัน</li>
       <li><strong>ปรับสูตร</strong> ถามเรื่องเทคนิค อุปกรณ์ หรือของทดแทน (“instead”) แล้วจะได้ชุดคำแนะนำ — เช่นใช้อะไรแทนน้ำปลา หรือร่อนแป้งอย่างไร</li>
       <li><strong>ความคิดเห็น</strong> หลังตอบแต่ละครั้งบอตจะขอความคิดเห็น; ภายในการใช้งานรอบเดียวกัน สูตรที่มีความคิดเห็นแล้วจะแสดงความคิดเห็นนั้นด้วย</li>
     </ul>
@@ -61,13 +61,13 @@
     <p>แชตบอตคอนโซลที่ใช้งานได้ มีสูตรอาหารและเบเกอรี (เช่น Tom Yum Goong, Crab Fried Rice, Egg Tart และ Crème Brûlée) ความคิดเห็นเก็บไว้เฉพาะระหว่างที่โปรแกรมทำงาน</p>
   </div>
 
-  <h2 class="label">ส่วนของฉัน vs AI</h2>
+  <h2 class="label">ส่วนของฉันกับ AI</h2>
   <div class="role-ai">
-    <p>ฉัน: ออกแบบระบบและเขียนโค้ดทั้งหมดเองด้วย C# — ไม่ได้ใช้ AI เพื่อน: รวบรวมสูตรอาหารและจัดลงในรูปแบบที่โค้ดของฉันอ่านได้</p>
+    <p>ฉัน: หัวหน้าทีม; ออกแบบระบบและเขียนโค้ดทั้งหมดเองด้วย C# — ไม่ได้ใช้ AI เพื่อนในทีม: รวบรวมสูตรอาหารและจัดลงในรูปแบบที่โค้ดของฉันอ่านได้</p>
   </div>
 
   <nav class="pager" aria-label="Project navigation">
-    <a href="../character.html">← ผลงานตัวละคร × เทคโนโลยีทั้งหมด</a>
+    <a href="../character.html">← ผลงานตัวละครและเทคโนโลยีทั้งหมด</a>
     <a href="teach-my-dog.html">ถัดไป: Teach My Dog! →</a>
   </nav>
 </article></main>

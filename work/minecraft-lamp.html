@@ -28,19 +28,20 @@
     <p class="crumb"><a href="../product.html">← Product &amp; Prototyping</a></p>
 
     <h1>Minecraft Pixel Lamp</h1>
-    <p class="lede">A 3D-printed pixel lamp whose light casts blocky, Minecraft-style shadows — controlled from a phone and powered by an ordinary phone adapter.</p>
-    <p class="tldr"><strong>In short:</strong> A 3D-printed lamp that casts Minecraft-style pixel shadows and is controlled from a phone. I designed, printed and assembled it; AI wrote the code — done.</p>
+    <p class="lede">A 3D-printed pixel lamp whose light shows as Minecraft-style pixels of different opacity, giving depth and shading — controlled from a phone and powered by an ordinary phone adapter.</p>
+    <p class="tldr"><strong>In short:</strong> A 3D-printed lamp whose light shows as Minecraft-style pixels, controlled from a phone, with a mode that follows the real weather. I designed, printed and assembled it; AI wrote the code — done.</p>
 
     <dl class="facts">
-      <div><dt>Year</dt><dd>Year 3, Term 2 (2026)</dd></div>
+      <div><dt>When</dt><dd>Year 3, Term 2 (2026)</dd></div>
       <div><dt>Team / role</dt><dd>Solo · self-initiated</dd></div>
       <div><dt>Tools</dt><dd>Tinkercad · 3D printing · ESP32 · WS2812B LEDs · Blynk app</dd></div>
+      <div><dt>Size</dt><dd>10 × 10 × 15.4 cm</dd></div>
       <div><dt>Status</dt><dd><span class="status">done</span></dd></div>
     </dl>
   </div>
   <figure class="hero">
-    <img src="../assets/minecraft-lamp/lamp-real-lit-hero.jpg" alt="The pixel lamp switched on, casting pixel-shaped shadows" width="2000" height="2000" loading="eager">
-    <figcaption>The lamp switched on — the light casts pixel shadows like Minecraft.</figcaption>
+    <img src="../assets/minecraft-lamp/lamp-real-lit-hero.jpg" alt="The pixel lamp switched on, its light showing as pixels of different brightness" width="2000" height="2000" loading="eager">
+    <figcaption>The lamp switched on — the light shows as pixels of different opacity, like a Minecraft block.</figcaption>
   </figure>
   </header>
 
@@ -52,12 +53,12 @@
     <h2>What I decided</h2>
     <ul class="decisions">
       <li><strong>Design and print it myself.</strong> Shape modelled in Tinkercad and printed on my own printer.</li>
-      <li><strong>Runs from a phone charger.</strong> Power is handled in code instead of adding hardware, so the lamp runs from a phone charger adapter.</li>
-      <li><strong>A flame that behaves like a flame.</strong> I specified the flame effect to step white → orange → red, never skipping a step.</li>
+      <li><strong>Runs from a phone charger.</strong> Brightness and current are capped in code (5 V, 1.2 A) so it runs from a phone charger, with no extra hardware.</li>
+      <li><strong>A flame that steps like real fire.</strong> I specified a flame that steps yellow → orange → red from bottom to top, never skipping a step. I changed it from white to yellow because white didn’t look enough like fire.</li>
     </ul>
 
     <h2>Result</h2>
-    <p>A working lamp: 50 WS2812B LEDs on an ESP32. Colour, brightness and effects are set from the Blynk app, which can also pull the weather for a city.</p>
+    <p>A working lamp: WS2812B LEDs on an ESP32. Colour, brightness and effects (solid, breathe, fire, meteor) are set from the Blynk app. An automatic weather mode fetches the current weather for a city typed into the app, from an online weather service every 10 minutes, and changes the light to match — warm amber when it’s clear, falling blue drops for rain, grey that gets darker with more cloud, white sparkles for snow; a demo setting can force each weather for showing it.</p>
   </div>
 
   <h2 class="label">Gallery</h2>
@@ -79,7 +80,7 @@
 
   <nav class="pager" aria-label="Project navigation">
     <a href="../product.html">← All Product &amp; Prototyping work</a>
-    <a href="svgtostl.html">Next: svgtostl →</a>
+    <a href="dolls.html">Next: Cotton Dolls →</a>
   </nav>
 </article></main>
 

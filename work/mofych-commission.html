@@ -29,10 +29,10 @@
 
     <h1>MOFYCH Commission Website</h1>
     <p class="lede">The website for MOFYCH, my commission shop for illustration and handmade dolls: an “art + web” front end I designed (the page itself is an illustration), a queue people can follow, and a paint matcher that finds exact colours.</p>
-    <p class="tldr"><strong>In short:</strong> The website for MOFYCH, my commission shop for illustration and handmade dolls. I designed the whole site; AI wrote the code. Live and in use — about 300 people on the tag list — and still being developed.</p>
+    <p class="tldr"><strong>In short:</strong> The website for MOFYCH, my commission shop for illustration and handmade dolls. I designed the whole site; AI wrote the code. Live and in use — about 300 sign-ups on the tag list — and still being developed.</p>
 
     <dl class="facts">
-      <div><dt>Year</dt><dd>2026</dd></div>
+      <div><dt>When</dt><dd>2026</dd></div>
       <div><dt>Team / role</dt><dd>Solo — design and system decisions; code built with AI</dd></div>
       <div><dt>Tools</dt><dd>Figma · drawing app · Google Apps Script · Google Sheets · email</dd></div>
       <div><dt>Status</dt><dd><span class="status">live</span> in active development · <a class="ext" href="https://honeykung.github.io/commission-tag/" target="_blank" rel="noopener">honeykung.github.io/commission-tag</a></dd></div>
@@ -52,15 +52,15 @@
     <h2>What I decided</h2>
     <ul class="decisions">
       <li><strong>Art + web.</strong> I designed the whole site myself in Figma: the clouds and logo are hand-drawn, and I designed the animation myself rather than letting AI choose it.</li>
-      <li><strong>A queue people can trust.</strong> Tag list and queue on Google Apps Script + Sheets: people join the tag list to get an email when I open, and cancelling a tag must be confirmed by email.</li>
+      <li><strong>A queue people can trust.</strong> Tag list (a sign-up list for opening alerts) and queue on Google Apps Script + Sheets: people join the tag list to get an email when I open, and cancelling a tag must be confirmed by email.</li>
       <li><strong>One search across every brand</strong> — otherwise you don’t get the closest colour.</li>
-      <li><strong>Data I checked myself.</strong> I transcribed brand colour charts myself.</li>
+      <li><strong>Data I checked myself.</strong> I transcribed most brand colour charts myself and checked the rest against published data.</li>
       <li><strong>A clear target.</strong> ΔE &lt; 5 as the goal (ΔE is a standard measure of how different two colours look; lower is closer); results are graded match / very close / close.</li>
       <li><strong>Mix only ordinary paints.</strong> I removed fluorescent and metallic paints from the 2-paint mix recipes and kept normal base colours.</li>
     </ul>
 
     <h2>Result</h2>
-    <p>Live and in use: tag to follow openings, sample work, fabric colours, paint colours, email alerts, a queue sheet, and a customer price estimate and an admin cost calculator. About 300 people have signed up to the tag list, and messages have been sent to customers through the site. The paint matcher covers 1,131 paints from 5 brands (Vallejo, Army Painter, Citadel, AK Interactive and Thai brand Thaitone); mix recipes come in 10% steps you can measure, marked as a guide to test with real paint. The colour maths uses standard formulas (CIEDE2000) written by AI.</p>
+    <p>Live and in use: tag to follow openings, sample work, fabric colours, paint colours, email alerts, a queue sheet, and a customer price estimate and an admin cost calculator. The tag list has about 300 sign-ups, and messages have been sent to customers through the site. The paint matcher covers 1,131 paints from 5 brands (Vallejo, Army Painter, Citadel, AK Interactive and Thai brand Thaitone); mix recipes come in 10% steps you can measure, marked as a guide to test with real paint. The colour maths uses standard formulas (CIEDE2000) written by AI.</p>
   </div>
 
   <h2 class="label">Gallery</h2>
@@ -83,6 +83,35 @@
     </figure>
   </div>
 
+  <h2 class="label" id="commission-illustrations">Commission illustrations</h2>
+  <p>Commissioned illustrations I drew for MOFYCH clients (shown with my watermark).</p>
+  <div class="gallery">
+    <figure>
+      <img src="../assets/mofych-commission/commission-01-galaxy-rings.webp" alt="Character portrait with a planetary ring and glowing star creatures" width="2000" height="2000" loading="lazy">
+      <figcaption>Character portrait with a planetary ring and glowing star creatures.</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/mofych-commission/commission-02-sunset-sparklers.webp" alt="Two characters with sparklers at sunset" width="2000" height="1476" loading="lazy">
+      <figcaption>Two characters with sparklers at sunset.</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/mofych-commission/commission-03-thai-traditional.webp" alt="Couple in Thai traditional dress at a palace pavilion" width="1500" height="2000" loading="lazy">
+      <figcaption>Couple in Thai traditional dress at a palace pavilion.</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/mofych-commission/commission-04-library.webp" alt="Couple between library shelves" width="1500" height="2000" loading="lazy">
+      <figcaption>Couple between library shelves.</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/mofych-commission/commission-05-cherry-blossom.webp" alt="Cheek kiss under falling cherry blossoms" width="2000" height="1978" loading="lazy">
+      <figcaption>Cheek kiss under falling cherry blossoms.</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/mofych-commission/commission-06-aquarium-3panel.webp" alt="Three-panel scene in an aquarium" width="1334" height="2000" loading="lazy">
+      <figcaption>Three-panel scene in an aquarium.</figcaption>
+    </figure>
+  </div>
+
   <!-- sketches -->
   <section class="sketches">
     <h2 class="label">Sketches &amp; process</h2>
@@ -100,7 +129,7 @@
         <figcaption>The home page drawn roughly before adding detail.</figcaption>
       </figure>
     </div>
-    <h3>Collector cards and certificate</h3>
+    <h3 id="collector-cards">Collector cards and certificate</h3>
     <p>Collector cards and certificate I designed and sent to print: 4 designs × 4 cards, 90 × 50 mm, printed by a factory in China. I separated the artwork into layers for the holographic foil and for matte vs smooth finishes.</p>
     <div class="gallery">
       <figure>
@@ -116,8 +145,8 @@
         <figcaption>Standard card, design 1.</figcaption>
       </figure>
       <figure>
-        <img src="../assets/mofych-commission/mofych-card-normal-5.webp" alt="Standard MOFYCH card, design 5 in light blue" width="1110" height="638" loading="lazy">
-        <figcaption>Standard card, design 5 (light blue).</figcaption>
+        <img src="../assets/mofych-commission/mofych-card-normal-5.webp" alt="Standard MOFYCH card with a black face and blue edge" width="1110" height="638" loading="lazy">
+        <figcaption>Standard card (blue edge).</figcaption>
       </figure>
       <figure>
         <img src="../assets/mofych-commission/mofych-card-normal-bf.webp" alt="Standard MOFYCH card with a star pattern" width="1110" height="638" loading="lazy">

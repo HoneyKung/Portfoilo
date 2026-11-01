@@ -16,7 +16,7 @@
   <a class="brand" href="../index.html">ณัฏฐณิชา พรหมบุญ</a>
   <nav class="site-nav" aria-label="Main">
     <a href="../product.html">ผลิตภัณฑ์และต้นแบบ</a>
-    <a href="../character.html">ตัวละคร × เทคโนโลยี</a>
+    <a href="../character.html">ตัวละครและเทคโนโลยี</a>
     <a href="../about.html">เกี่ยวกับฉัน</a>
     <details class="lang-menu"><summary aria-label="ภาษา: ไทย">ไทย</summary><ul><li><a href="../../work/digital-puzzle-box.html" lang="en" hreflang="en">English</a></li><li><a href="#" aria-current="true" lang="th">ไทย</a></li></ul></details><!--/lang-->
   </nav>
@@ -29,25 +29,25 @@
 
     <h1>Digital Puzzle Box</h1>
     <p class="lede">บอร์ดจริงที่ทำหน้าที่เป็นตัวควบคุมกล่องปริศนาที่อยู่บนจอ — เลือกด้าน แก้ปริศนาของด้านนั้นแบบดิจิทัล แล้วหากุญแจจริงเพื่อจบเกม</p>
-    <p class="tldr"><strong>สรุปสั้น ๆ:</strong> บอร์ดจริงที่ควบคุมกล่องปริศนาบนจอ ฉันเป็นหัวหน้าทีม ทำบอร์ด หน้าจอเขาวงกต และโค้ด Arduino (เขียนเองส่วนหนึ่ง AI เขียนส่วนหนึ่ง) — งานในวิชา เสร็จแล้ว</p>
+    <p class="tldr"><strong>สรุปสั้น ๆ:</strong> บอร์ดจริงที่ควบคุมกล่องปริศนาบนจอ ฉันเป็นหัวหน้าทีม ทำบอร์ด หน้าจอเขาวงกต และโค้ด Arduino (ฉันเขียนเองหลายส่วน AI เขียนส่วนอื่น) — งานในวิชา เสร็จแล้ว</p>
 
     <dl class="facts">
-      <div><dt>ปี</dt><dd>ปี 2 เทอม 2 (2025)</dd></div>
-      <div><dt>ทีม / บทบาท</dt><dd>หัวหน้าทีม</dd></div>
-      <div><dt>เครื่องมือ</dt><dd>Arduino · Processing · เบรดบอร์ด · เซอร์โว · โพเทนชิโอมิเตอร์ · LED</dd></div>
+      <div><dt>ช่วงเวลา</dt><dd>ปี 2 เทอม 2 (2025)</dd></div>
+      <div><dt>ทีม / บทบาท</dt><dd>หัวหน้าทีม ทีม 3 คน</dd></div>
+      <div><dt>เครื่องมือ</dt><dd>Arduino · ESP32 · Processing · เบรดบอร์ด · เซอร์โว · โพเทนชิโอมิเตอร์ · เซนเซอร์อัลตราโซนิกและอินฟราเรด (IR) · LED</dd></div>
       <div><dt>สถานะ</dt><dd><span class="status">เสร็จแล้ว</span></dd></div>
     </dl>
   </div>
   <figure class="hero">
-    <img src="../../assets/digital-puzzle-box/puzzle-box-board.webp" alt="Overview of the Digital Puzzle Box board with buttons, LEDs and wiring" width="960" height="540" loading="eager">
-    <figcaption>บอร์ดที่มาแทนกล่องแบบพลิกได้</figcaption>
+    <img src="../../assets/digital-puzzle-box/puzzle-box-board.webp" alt="บอร์ดแบนที่ใช้แทนกล่องแบบพลิก" width="960" height="540" loading="eager">
+    <figcaption>บอร์ดแบนที่ใช้แทนกล่องแบบพลิก</figcaption>
   </figure>
   </header>
 
 
   <div class="story">
     <h2>โจทย์</h2>
-    <p>กล่องปริศนาทั่วไปแก้ด้วยมือในโลกจริง ฉันอยากได้ฝาแฝดดิจิทัล: ถือของจริงเหมือนคอนโซล ส่วนปริศนาอยู่บนจอ — ปริศนาที่เล่นได้เฉพาะแบบดิจิทัล — การแตะของจริงจึงเปลี่ยนโลกดิจิทัล</p>
+    <p>กล่องปริศนาทั่วไปแก้ด้วยมือในโลกจริง ฉันอยากได้ฝาแฝดดิจิทัล (digital twin) คือกล่องจริงกับกล่องบนจอเชื่อมกัน ทำอะไรกับของจริง กล่องบนจอก็เปลี่ยนตาม ผู้เล่นถือของจริงเหมือนคอนโซล ส่วนปริศนาอยู่บนจอและเล่นได้เฉพาะแบบดิจิทัล การแตะของจริงจึงเปลี่ยนโลกดิจิทัล</p>
 
     <h2>สิ่งที่ฉันตัดสินใจ</h2>
     <ul class="decisions">
@@ -58,41 +58,41 @@
     </ul>
 
     <h2>ผลลัพธ์</h2>
-    <p>สร้างบนเบรดบอร์ด โดยมีเงื่อนไขชนะรวมเดียวของทั้ง 6 เกม</p>
+    <p>สร้างบนเบรดบอร์ด ต้องผ่านปริศนาครบ 6 แบบจึงชนะ</p>
   </div>
 
   <h2 class="label">แกลเลอรี</h2>
   <div class="gallery">
     <figure>
-      <img src="../../assets/digital-puzzle-box/controls-leds.webp" alt="Buttons, potentiometer and LEDs on the board" width="960" height="540" loading="lazy">
+      <img src="../../assets/digital-puzzle-box/controls-leds.webp" alt="ปุ่ม โพเทนชิโอมิเตอร์ และ LED" width="960" height="540" loading="lazy">
       <figcaption>ปุ่ม โพเทนชิโอมิเตอร์ และ LED</figcaption>
     </figure>
     <figure>
-      <img src="../../assets/digital-puzzle-box/servo-leds.webp" alt="Servo and LEDs on the board" width="960" height="540" loading="lazy">
+      <img src="../../assets/digital-puzzle-box/servo-leds.webp" alt="เซอร์โวและ LED" width="960" height="540" loading="lazy">
       <figcaption>เซอร์โวและ LED</figcaption>
     </figure>
     <figure>
-      <img src="../../assets/digital-puzzle-box/memory-game.webp" alt="Screen of the light-sequence memory game" width="960" height="944" loading="lazy">
-      <figcaption>เกมจำลำดับแสง</figcaption>
+      <img src="../../assets/digital-puzzle-box/memory-game.webp" alt="ปริศนาจำลำดับแสง" width="960" height="944" loading="lazy">
+      <figcaption>ปริศนาจำลำดับแสง</figcaption>
     </figure>
     <figure>
-      <img src="../../assets/digital-puzzle-box/maze-game.webp" alt="Maze game screen next to the Arduino IDE" width="960" height="510" loading="lazy">
+      <img src="../../assets/digital-puzzle-box/maze-game.webp" alt="หน้าจอเขาวงกต (ฉันสร้างเอง) คู่กับ Arduino IDE" width="960" height="510" loading="lazy">
       <figcaption>หน้าจอเขาวงกต (ฉันสร้างเอง) คู่กับ Arduino IDE</figcaption>
     </figure>
     <figure>
-      <img src="../../assets/digital-puzzle-box/clock-game.webp" alt="Clock-time game screen next to the Arduino IDE" width="960" height="510" loading="lazy">
-      <figcaption>เกมตั้งเวลานาฬิกา คู่กับ Arduino IDE</figcaption>
+      <img src="../../assets/digital-puzzle-box/clock-game.webp" alt="ปริศนาตั้งเวลานาฬิกา คู่กับ Arduino IDE" width="960" height="510" loading="lazy">
+      <figcaption>ปริศนาตั้งเวลานาฬิกา คู่กับ Arduino IDE</figcaption>
     </figure>
   </div>
 
-  <h2 class="label">ส่วนของฉัน vs AI</h2>
+  <h2 class="label">ส่วนของฉันกับ AI</h2>
   <div class="role-ai">
-    <p>ฉัน: คอนเซปต์และออกแบบอุปกรณ์ วงจรบนเบรดบอร์ด UI ตรรกะ และการแก้ปัญหา; หน้าจอเขาวงกต ระบบที่เชื่อมหน้าจอต่าง ๆ และโค้ด Arduino — ผสมโค้ดที่เขียนเองกับโค้ดที่ AI เขียน เพื่อนในทีม: หน้าจอ Processing อื่น ๆ เอกสาร และการนำเสนอ</p>
+    <p>ฉัน: หัวหน้าทีม; คอนเซปต์และออกแบบอุปกรณ์ วงจรบนเบรดบอร์ด UI ตรรกะ และการแก้ปัญหา; หน้าจอเขาวงกตและระบบที่เชื่อมหน้าจอต่าง ๆ โค้ด Arduino: ฉันเขียนเองหลายส่วน AI เขียนส่วนอื่น เพื่อนในทีม: หน้าจอ Processing อื่น ๆ เอกสาร และการนำเสนอ</p>
   </div>
 
   <nav class="pager" aria-label="Project navigation">
     <a href="../product.html">← ผลงานผลิตภัณฑ์และต้นแบบทั้งหมด</a>
-    <a href="oc-companion.html">ถัดไป: OC Companion →</a>
+    <a href="paint-palette.html">ถัดไป: จานสีหลุมเล็ก →</a>
   </nav>
 </article></main>
 

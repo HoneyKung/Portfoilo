@@ -28,19 +28,19 @@
     <p class="crumb"><a href="../product.html">← Product &amp; Prototyping</a> · <a href="../character.html">Character × Tech</a></p>
 
     <h1>METO — small interactive robot</h1>
-    <p class="lede">A small robot that shows emotion, built to ask whether that helps beginners learn block coding — with a web app where learners program it.</p>
-    <p class="tldr"><strong>In short:</strong> A small robot that shows emotion, for my thesis research on learning block coding. I lead a team of 3 and did the concept, CAD, printing, power wiring and the face animations; AI writes the code — in progress, user study not started yet.</p>
+    <p class="lede">A small robot that shows emotion, built to ask whether it helps beginners learn block coding differently from one that doesn’t — with a web app where learners program it.</p>
+    <p class="tldr"><strong>In short:</strong> A small robot that shows emotion, for my thesis research on learning block coding. I lead a team of 3 and did the concept, CAD, printing, power wiring and the face animations; AI writes most of the code — in progress, user study not started yet.</p>
 
     <dl class="facts">
-      <div><dt>Year</dt><dd>2025 – present (research with my advisor from Year 3, now my thesis)</dd></div>
+      <div><dt>When</dt><dd>2025 – present (research with my advisor from Year 3, now my thesis)</dd></div>
       <div><dt>Team / role</dt><dd>Team lead, team of 3</dd></div>
-      <div><dt>Tools</dt><dd>ESP32 · Tinkercad · 3D printing · Unity (digital twin) · web app</dd></div>
+      <div><dt>Tools</dt><dd>ESP32 · Tinkercad · 3D printing (PETG/PLA body, TPU tracks) · Unity (digital twin — a 3D copy that moves like the real robot) · web app</dd></div>
       <div><dt>Status</dt><dd><span class="status">in progress</span></dd></div>
     </dl>
   </div>
   <figure class="hero">
-    <img src="../assets/meto/meto-grip-cup.webp" alt="METO robot with 3D-printed oval arms gripping and lifting a cup" width="640" height="360" loading="eager">
-    <figcaption>The real robot: printed oval arms gripping and lifting a cup.</figcaption>
+    <img src="../assets/meto/meto-13-tracked-current.webp" alt="Current METO: grey 3D-printed body on tracks, with its screen face showing two eyes" width="480" height="480" loading="eager">
+    <figcaption>The current version (Sep–Oct 2026): grey printed body on tracks, with the screen face.</figcaption>
   </figure>
   </header>
 
@@ -52,15 +52,15 @@
     <h2>What I decided</h2>
     <ul class="decisions">
       <li><strong>Arms that clamp and lift, not a claw.</strong> A claw breaks the idea of a small human-like robot. Two joints at the shoulder, and a trapezoid body instead of a box so the arms can close in far enough to grip.</li>
-      <li><strong>Make lifting actually work.</strong> The foam-board version could grip but not lift. First fix: rubber on the hand corners. Then printed concave oval arms that take many shapes, with small diamond-shaped studs so objects don’t slip — and a laser distance sensor at arm level (being added) to check whether something was really lifted.</li>
+      <li><strong>Make lifting actually work.</strong> The foam-board version could grip but not lift. First fix: rubber on the hand corners. Then printed concave oval arms that take many shapes, with small diamond-shaped studs so objects don’t slip — and a laser distance sensor under the body (planned) to check whether something was really lifted.</li>
       <li><strong>Wheels by testing, not by guess.</strong> Car wheels on the first prototype → printed tracks (two wheels: the belt slipped off, so I added a middle wheel) → tracks turned poorly, so the next version moves to two wheels plus a ball caster (not yet in CAD).</li>
-      <li><strong>As small as possible.</strong> No heat-set inserts (metal threads pressed into printed parts with heat), to keep the robot small. The body is five layers that stack like a tiffin carrier, so it’s easy to assemble yourself and to modify.</li>
+      <li><strong>Simple to assemble.</strong> I don’t have heat-set inserts (metal threads pressed into printed parts with heat), so the parts are designed to assemble simply without them. The body is five layers that stack like a tiffin carrier, so it’s easy to assemble yourself and to modify.</li>
       <li><strong>A face that reacts.</strong> I designed and animated the screen expressions myself (9 of them). The camera reads the learner’s face to recognise their emotion (smiling / sad / neutral); the robot turns to follow them and can mirror the learner’s expression on its screen face. On the web, the on-screen robot face reacts as the learner codes — happy when the mission checklist is met, love when a star is earned, confused when the code isn’t ready.</li>
       <li><strong>A web app for anyone.</strong> One account type for everyone — teacher or student roles come from joining a class. A skill counts only when code runs without error. No game words like XP or Level on the teacher side. Teachers can set their own tasks, and the AI helper gives hints, not answers. My advisor suggested the missions and the skill map; I worked out the details and drew a 62-piece robot avatar.</li>
     </ul>
 
     <h2>Result</h2>
-    <p>A working robot with two arms, a screen face, an ESP32, two 18650 cells with BMS and USB-C charging; I wired the power myself (fuse, common ground) and it drives wirelessly. The printed oval arms grip and lift a cup. The “METO Robot” web runs on a local server with demo data — no public link yet. <strong>The user study has not started</strong>: the ethics-approval (IRB) documents are in preparation.</p>
+    <p>A working robot with a screen face, an ESP32 and two arms (tested on the Apr 2026 version). The current tracked version runs on two 18650 cells (rechargeable lithium cells) with a BMS (battery protection board) and USB-C charging; I wired the power myself (fuse, common ground) and it drives wirelessly. The Apr 2026 version’s printed oval arms lifted a cup. The “METO Robot” web runs on a local server with demo data — no public link yet. <strong>The user study has not started</strong>: the ethics-approval (IRB) documents are in preparation.</p>
   </div>
 
   <figure class="hero paper faces" id="faces">
@@ -85,6 +85,18 @@
     <figure>
       <img src="../assets/meto/meto-version-2026-04.webp" alt="METO robot, Apr 2026 version (still from a video)" width="1280" height="720" loading="lazy">
       <figcaption>Apr 2026 (video still).</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/meto/meto-grip-cup.webp" alt="METO Apr 2026 version with 3D-printed oval arms gripping and lifting a cup" width="640" height="360" loading="lazy">
+      <figcaption>Apr 2026 version, USB-powered during testing — printed oval arms lifting a cup.</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/meto/meto-11-tracked-chassis.webp" alt="Grey 3D-printed METO chassis on white printed tracks" width="843" height="379" loading="lazy">
+      <figcaption>Sep–Oct 2026: tracked grey version (current) — printed chassis and tracks.</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/meto/meto-12-tracked-assembly-open.webp" alt="Current METO opened up during assembly, with battery cells, wiring and the screen face" width="480" height="480" loading="lazy">
+      <figcaption>Sep–Oct 2026: tracked grey version (current) — opened during assembly.</figcaption>
     </figure>
   </div>
   <!-- meto-videos-youtube -->
@@ -113,7 +125,7 @@
     </figure>
     <figure>
       <img src="../assets/meto/meto-cad-layers.webp" alt="Exploded CAD view of the METO robot's stacked layers next to its packaging box" width="1600" height="729" loading="lazy">
-      <figcaption>Exploded CAD of the first (tracked) version. The large box is the packaging design — which layer goes where, and what foam holds it.</figcaption>
+      <figcaption>Exploded CAD of the first tracked version. The large box is the packaging design — which layer goes where, and what foam holds it.</figcaption>
     </figure>
     <figure>
       <img src="../assets/meto/meto-digital-twin.webp" alt="Rounded early design of the METO robot as a digital twin in Unity" width="640" height="360" loading="lazy">

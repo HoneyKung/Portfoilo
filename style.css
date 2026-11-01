@@ -125,6 +125,7 @@ p { margin: 0 0 14px; }
   .mosaic { grid-template-columns: repeat(6, minmax(0, 1fr)); }
   .mosaic > .card { grid-column: span 2; }
   .mosaic > .card.big { grid-column: span 4; grid-row: span 2; }
+  .mosaic > .card.half { grid-column: span 3; }
   .mosaic > .card.big .cover { aspect-ratio: auto; flex: 1; min-height: 340px; }
 }
 .mosaic > .card.big h3 { font-size: 22px; }
@@ -141,6 +142,8 @@ p { margin: 0 0 14px; }
   .cards.lg > .card:nth-last-child(1):nth-child(3n+2) { grid-column: span 3; }
   .cards.lg > .card:nth-last-child(2):nth-child(3n+1) .cover,
   .cards.lg > .card:nth-last-child(1):nth-child(3n+2) .cover { aspect-ratio: 16 / 9; }
+  /* a lone card in the last row sits in the middle */
+  .cards.lg > .card:nth-last-child(1):nth-child(3n+1) { grid-column: 3 / span 2; }
 }
 .card { display: flex; flex-direction: column; color: var(--ink); text-decoration: none; min-width: 0; }
 .card .cover {
@@ -432,3 +435,6 @@ figure.video { max-width: 960px; }
 .tldr { font-size: 15.5px; line-height: 1.55; color: var(--ink); background: var(--paper); border: 1px solid var(--rule);
   border-left: 3px solid var(--accent); border-radius: 0 var(--radius) var(--radius) 0; padding: 10px 14px; margin: -8px 0 22px; max-width: 46em; }
 .intro .id2 { font-size: clamp(15px, 1.6vw, 17px); color: var(--muted); margin: 10px 0 0; max-width: 30em; }
+
+.intro .cv { font-size: 14px; color: var(--muted); margin: 10px 0 0; }
+.facts dd .status { margin-bottom: 6px; }
