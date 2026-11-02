@@ -28,8 +28,8 @@
     <p class="crumb"><a href="../character.html">← Character × Tech</a></p>
 
     <h1>Stardew Valley mod</h1>
-    <p class="lede">In my Stardew Valley mod, Raphael follows his own daily schedule around town, with museum stops that depend on what the player has donated. He can follow you, lead you to a destination or come to visit, with dialogue that fits the situation. Follow mode is still being tuned.</p>
-    <p class="tldr"><strong>In short:</strong> I designed Raphael and his rules, redrew his walking sprite, and drew all item art and icons in the mod except the key, including orange cake, macarons and coffee. AI tools write the code and draft the script. It is in progress.</p>
+    <p class="lede">In my Stardew Valley mod, Raphael follows his own daily schedule around town, with museum stops that depend on what the player has donated. He can follow you, lead you to a destination or come to visit, with dialogue that fits the situation, aiming for dialogue and routines that stay varied. Follow mode is still being tuned.</p>
+    <p class="tldr"><strong>In short:</strong> I designed Raphael and his rules with varied dialogue and routines as the goal, redrew his walking sprite, and drew all item art and icons in the mod except the key, including orange cake, macarons and coffee. AI tools write the code and draft the script. It is in progress.</p>
 
     <dl class="facts">
       <div><dt>When</dt><dd>Year 4, Term 1 (2026)</dd></div>
@@ -52,7 +52,7 @@
 
   <div class="story">
     <h2>Problem</h2>
-    <p>Give one NPC a life the player can see. Not a character who stands in place reading lines, but one who has his own day, can do things with the player on request, and speaks to fit the situation. And build it so the same systems can be reused for other characters later.</p>
+    <p>NPCs in the game repeat their lines and daily routines until the player knows them by heart. I want to give one NPC a life the player can see, with dialogue and routines that stay varied. My design goal is for the player to spend at least 3 in-game years without ever seeing him repeat a line. That goal has not yet been achieved. He should have his own day, do things with the player on request, and speak to fit the situation, with systems that can be reused for other characters later.</p>
 
     <h2>What I decided</h2>
     <ul class="decisions">
@@ -60,10 +60,10 @@
       <li><strong>The character is mine.</strong> I designed Raphael and his whole personality, and chose the designs and visuals.</li>
       <li><strong>His home, planned first.</strong> I designed the layout of Raphael’s house and front yard myself. That design is still at the design stage, so the game uses a placeholder house for now.</li>
       <li><strong>Clear behaviour rules.</strong> The NPC does one thing at a time, and a new command replaces the old one.</li>
-      <li><strong>Conditional daily routines.</strong> On days he works away from home, Raphael brings a packed lunch.</li>
+      <li><strong>Conditional daily routines.</strong> On days he works away from home, Raphael brings a packed lunch. Conditional routines are one way I am working toward that goal of variety.</li>
       <li><strong>Planned: a party system.</strong> Companions will surround the player instead of walking in a line, so no one looks left behind.</li>
       <li><strong>Fix Thai line breaks in code.</strong> Thai is written without spaces between words, so I added a Thai word-wrap mod (C#) that breaks dialogue lines between words.</li>
-      <li><strong>Final say on the script.</strong> I set the script rules and decide which lines stay.</li>
+      <li><strong>Final say on the script.</strong> I set the script rules and decide which lines stay. Dialogue that depends on weather, season, day and place is another way I am working toward that goal.</li>
     </ul>
 
     <h2>Result</h2>
