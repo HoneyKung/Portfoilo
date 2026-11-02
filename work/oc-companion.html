@@ -28,7 +28,7 @@
     <p class="crumb"><a href="../product.html">← Product &amp; Prototyping</a></p>
 
     <h1>OC Companion</h1>
-    <p class="lede">A palm-sized device (about 4–5 cm per side), made to order as one buyer’s own original character (OC): a small AMOLED screen is the whole face, with figure-style sculpted hair. Designed for a desk, travel and use as a keychain.</p>
+    <p class="lede">A palm-sized device (about 4–5 cm per side), made to order as one buyer’s own original character (OC): a small AMOLED screen is the whole face, with figure-style sculpted hair. Designed for a desk, travel and use as a keychain. My software concept is to give that character a life simulated by code.</p>
     <p class="tldr"><strong>In short:</strong> Solo and self-initiated. I did the concept and the character art, and AI wrote the simulator. It is still in design, with no hardware yet.</p>
 
     <dl class="facts">
@@ -59,11 +59,22 @@
       <li><strong>Planned idle animation:</strong> it blinks and breathes, timed like hand-drawn animation rather than smooth rig motion. It is mostly on twos, a new drawing every 2 frames, with the blink on ones and breathing on fours.</li>
     </ul>
 
+    <h2>A character with its own life</h2>
+    <p>Planned, not built yet: I want code to simulate a character’s life, the same idea behind <a href="oc-chat.html">OC Chat</a>, with routines and moods shaping how it responds.</p>
+    <ul class="decisions">
+      <li>The behavior model would use ongoing touch, shaking, time, battery, mood, energy, memory, closeness and personality to drive continuous facial movement, rather than fixed event clips or random poses.</li>
+      <li>It would wake, eat, grow sleepy and sleep with real-time routines, respond to being woken according to personality, and seek attention itself, without becoming a clock.</li>
+      <li>After days apart, it might be happy, sulky or aloof, but never get sick or die to punish its owner.</li>
+      <li>Two devices would recognize each other over BLE (short-range wireless), keep relationship type separate from closeness, and play shared scenes without button presses, like OCs talking among themselves.</li>
+      <li>NFC (tap to read data) cards or miniatures would make their objects appear onscreen.</li>
+      <li>Basic behavior would work offline, with fixed rules only for safety such as low battery, charging and heat, not personality.</li>
+    </ul>
+
     <h2>Result</h2>
     <p>Still in design, currently a simulation on the computer. No hardware built yet. First simulator round works: it reads a layered PSD in my template and plays a test blink on the device-sized screen. Next, I will add the character face artwork I drew.</p>
   </div>
 
-  <h2 class="label">My role vs AI</h2>
+  <h2 class="label">My role</h2>
   <div class="role-ai">
     <p>I came up with the concept, made the product decisions and drew the character art in layers. Next, I will rig the face myself. AI researched options, wrote technical specs for me to decide on and wrote the simulator code, with a separate AI reviewer checking that work.</p>
   </div>
